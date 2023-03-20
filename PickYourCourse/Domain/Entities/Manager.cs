@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    internal class Manager: BaseUser
+    public class Manager: BaseUser
     {
 
     }

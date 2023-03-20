@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    internal class Professor: BaseUser
+    public class Professor: BaseUser
     {
         public bool IsActivated { get; set; }
-        public List<Course> Courses { get; set; }
+        public IList<Course> Courses { get; set; }
     }
 }

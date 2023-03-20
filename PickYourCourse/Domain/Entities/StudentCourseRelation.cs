@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    internal class StudentCourseRelation
+    public class StudentCourseRelation
     {
         public int Id { get; set; }
         public int StudentId { get; set; }

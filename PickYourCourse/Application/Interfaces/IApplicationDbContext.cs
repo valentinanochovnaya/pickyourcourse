@@ -8,8 +8,14 @@ using System.Threading.Tasks;
 
 namespace Application.Interfaces
 {
-    internal interface IApplicationDbContext
+    public interface IApplicationDbContext
     {
-         DbSet<Student> Students { get; set; }
+        DbSet<Student> Students { get; set; }
+         DbSet<Course> Courses { get; set; }
+         DbSet<StudentCourseRelation> StudentCourses { get; set; }
+         DbSet<Manager> Managers { get; set; }
+         DbSet<Professor> Professors { get; set; }
+         DbSet<Notification> Notifications { get; set; }
+        Task<int> SaveChangesAsync();
     }
 }

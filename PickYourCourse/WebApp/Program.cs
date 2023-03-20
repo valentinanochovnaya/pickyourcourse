@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Persistence.DataContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,9 @@ builder.Services.AddSwaggerGen(c =>
         Title = "Pick Your Course",
     });
 });
+var connectionStrings = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<DataContext>(x => x.UseNpgsql(connectionStrings));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
