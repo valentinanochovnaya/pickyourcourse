@@ -1,8 +1,22 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.OpenApi.Models;
 using Persistence.DataContext;
+using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add serilog
+var configuration = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(configuration)
+    .CreateLogger();
+
+builder.Host.UseSerilog(Log.Logger);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -19,6 +33,7 @@ var connectionStrings = builder.Configuration.GetConnectionString("DefaultConnec
 builder.Services.AddDbContext<DataContext>(x => x.UseNpgsql(connectionStrings));
 
 var app = builder.Build();
+app.UseSerilogRequestLogging();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -44,4 +59,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+
+Log.Information("Application starting app");
 app.Run();
+
+Log.CloseAndFlush();
