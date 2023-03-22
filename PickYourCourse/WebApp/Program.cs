@@ -18,6 +18,7 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog(Log.Logger);
 
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen(c =>
@@ -45,7 +46,7 @@ if (!app.Environment.IsDevelopment())
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "OnionArchitecture");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pick Your Course");
 });
 
 app.UseHttpsRedirection();
