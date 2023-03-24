@@ -16,5 +16,6 @@ namespace Domain.Entities
         public string? ProfilePhotoPublicId { get; set; }
         public byte[]? PasswordHash { get; set; }
         public byte[]? PasswordSalt { get; set; }
+        public bool IsManager { get; set; }
     }
 }

@@ -1,0 +1,68 @@
+﻿@model RegisterViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Register</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true"/>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-text">
+            <h3>Pick Your Course</h3>
+        </div>
+        <form class="form-container" asp-action="Register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="first-row">
+                <div class="form-group">
+                    <label asp-for="Role" class="control-label"></label>
+                    <select id="role" asp-for="Role" asp-items="Html.GetEnumSelectList<Roles>()" class="form-control">
+                    </select>
+                    <span asp-validation-for="Role" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input placeholder="First Name" asp-for="FirstName" class="form-control"/>
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input placeholder="Last Name"  asp-for="LastName" class="form-control"/>
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input placeholder="Email"  asp-for="Email" class="form-control"/>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="third-row" id="third">
+                <div class="form-group" id="year">
+                    <label asp-for="Year" class="control-label"></label>
+                    <input placeholder="Course Year"  asp-for="Year" class="form-control"/>
+                    <span asp-validation-for="Year" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input type="password" placeholder="Password"  asp-for="Password" class="form-control"/>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword" class="control-label"></label>
+                    <input type="password" placeholder="Confirm Password"  asp-for="ConfirmPassword" class="form-control"/>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+            <b>@ViewBag.message</b> 
+            <div class="register-confirm">
+                <input class="register-btn" type="submit" value="Register"/>
+            </div>
+        </form>
+    </div>
+    <script src="~/js/register.js"></script>
+</body>
+</html>

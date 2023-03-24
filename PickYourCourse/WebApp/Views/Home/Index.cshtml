@@ -1,8 +1,28 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=">
+            <title>@ViewData["Title"] - Welcome Page</title>
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+            <link rel="stylesheet" href="~/css/welcome-page.css" asp-append-version="true" />
+    </head>
+    <body>
+    <div class="layout" id="canvas">
+        <div class="welcome-container">
+            <div class="welcome-content">
+                <div class="header-text">
+                    <h3>Pick Your Course</h3>
+                </div>
+                <button type="button" class="btn btn-primary login-btn">Login</button>
+                <a type="button" class="btn btn-primary register-btn" asp-controller="Account" asp-action="Register">Register</a>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/welcome-page.js" asp-append-version="true"></script>
+    </body>
+</html>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
