@@ -2,6 +2,12 @@
 using System.Diagnostics;
 using WebApp.Models;
 
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+using WebApp.Models;
+
 namespace WebApp.Controllers
 {
     public class HomeController : Controller
@@ -12,6 +18,9 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.User.Identity.IsAuthenticated)
+                ViewData["Role"] = HttpContext.User.Claims.First(c => c.Type == "Role");
+                
             return View();
         }
 
