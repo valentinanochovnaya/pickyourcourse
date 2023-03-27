@@ -6,4 +6,5 @@ public interface IAccountRepository
 {
     Task RegisterStudent(Student student);
     Task RegisterProfessor(Professor professor);
+    String GetRole(String email, String password);
 }
