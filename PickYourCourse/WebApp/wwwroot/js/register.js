@@ -1,6 +1,5 @@
 ﻿document.getElementById("role").addEventListener("change", function () {
-    console.log('here')
-    if(document.getElementById("role").value === "Professor") {
+    if(document.getElementById("role")?.value == 1) {
         document.getElementById("year").style.display = "none";
         document.getElementById("third").style.justifyContent = "center"
     }
