@@ -1703,3 +1703,384 @@ System.InvalidOperationException: Sequence contains no matching element
 04/18/2023 22:38:19 HTTP "GET" "/css/student-home.css" responded 200 in 0.6235 ms
 04/18/2023 22:38:19 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 7.2544 ms
 04/18/2023 22:38:19 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 7.9122 ms
+04/18/2023 22:41:55 Application starting app
+04/18/2023 22:42:01 HTTP "GET" "/Student/StudentHomePage" responded 200 in 136.1591 ms
+04/18/2023 22:42:01 HTTP "GET" "/css/student-home.css" responded 200 in 5.6678 ms
+04/18/2023 22:42:01 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 17.1519 ms
+04/18/2023 22:42:01 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 17.1987 ms
+04/18/2023 22:42:01 HTTP "GET" "/favicon.ico" responded 200 in 2.2045 ms
+04/18/2023 22:44:44 Application starting app
+04/18/2023 22:44:45 HTTP "GET" "/Student/StudentHomePage" responded 500 in 201.2829 ms
+System.InvalidOperationException: Cannot override the 'href' attribute for <a>. An <a> with a specified 'href' must not have attributes starting with 'asp-route-' or an 'asp-action', 'asp-controller', 'asp-area', 'asp-route', 'asp-protocol', 'asp-host', 'asp-fragment', 'asp-page' or 'asp-page-handler' attribute.
+   at Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCoreGeneratedDocument.Views_Student_StudentHomePage.<ExecuteAsync>b__17_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Student_StudentHomePage.ExecuteAsync() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Views\Student\StudentHomePage.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 22:44:45 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot override the 'href' attribute for <a>. An <a> with a specified 'href' must not have attributes starting with 'asp-route-' or an 'asp-action', 'asp-controller', 'asp-area', 'asp-route', 'asp-protocol', 'asp-host', 'asp-fragment', 'asp-page' or 'asp-page-handler' attribute.
+   at Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCoreGeneratedDocument.Views_Student_StudentHomePage.<ExecuteAsync>b__17_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Student_StudentHomePage.ExecuteAsync() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Views\Student\StudentHomePage.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 22:45:20 Application starting app
+04/18/2023 22:45:24 HTTP "GET" "/Student/StudentHomePage" responded 200 in 158.4107 ms
+04/18/2023 22:45:24 HTTP "GET" "/css/student-home.css" responded 304 in 8.5424 ms
+04/18/2023 22:45:27 HTTP "GET" "/Student/LogOut" responded 302 in 14.1229 ms
+04/18/2023 22:45:27 HTTP "GET" "/" responded 200 in 21.0437 ms
+04/18/2023 22:45:27 HTTP "GET" "/js/welcome-page.js" responded 200 in 1.3654 ms
+04/18/2023 22:45:27 HTTP "GET" "/lib/bootstrap/dist/js/bootstrap.bundle.min.js" responded 200 in 8.1852 ms
+04/18/2023 22:45:27 HTTP "GET" "/lib/jquery/dist/jquery.min.js" responded 200 in 8.4226 ms
+04/18/2023 22:45:27 HTTP "GET" "/css/welcome-page.css" responded 200 in 8.5817 ms
+04/18/2023 22:45:27 HTTP "GET" "/css/site.css" responded 200 in 12.4823 ms
+04/18/2023 22:45:27 HTTP "GET" "/js/site.js" responded 200 in 10.1373 ms
+04/18/2023 22:45:27 HTTP "GET" "/WebApp.styles.css" responded 200 in 9.6217 ms
+04/18/2023 22:45:30 HTTP "GET" "/Access/Login" responded 200 in 125.7729 ms
+04/18/2023 22:45:30 HTTP "GET" "/js/register.js" responded 200 in 0.6676 ms
+04/18/2023 22:45:30 HTTP "GET" "/css/register.css" responded 200 in 0.7903 ms
+04/18/2023 22:45:37 HTTP "POST" "/Access/Login" responded 302 in 1210.6415 ms
+04/18/2023 22:45:37 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1.1475 ms
+04/18/2023 22:45:42 HTTP "GET" "/Student/LogOut" responded 302 in 0.5548 ms
+04/18/2023 22:45:42 HTTP "GET" "/" responded 200 in 0.8155 ms
+04/18/2023 22:46:42 HTTP "GET" "/Access/Login" responded 200 in 6.3852 ms
+04/18/2023 22:46:46 HTTP "POST" "/Access/Login" responded 302 in 4.2866 ms
+04/18/2023 22:46:46 HTTP "GET" "/Student/StudentHomePage" responded 200 in 0.5719 ms
+04/18/2023 22:46:46 HTTP "GET" "/css/student-home.css" responded 304 in 0.2922 ms
+04/18/2023 22:53:44 Application starting app
+04/18/2023 22:54:13 Application starting app
+04/18/2023 22:55:55 Application starting app
+04/18/2023 22:56:06 HTTP "GET" "/Student/StudentHomePage" responded 200 in 140.2043 ms
+04/18/2023 22:56:06 HTTP "GET" "/css/student-home.css" responded 304 in 9.2442 ms
+04/18/2023 22:56:31 HTTP "GET" "/Student/Notifications" responded 200 in 9.7876 ms
+04/18/2023 22:58:31 Application starting app
+04/18/2023 22:58:45 HTTP "GET" "/Student/StudentHomePage" responded 500 in 41.5523 ms
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+WebApp.Controllers.StudentController.StudentHomePage (WebApp)
+WebApp.Controllers.StudentController.StudentHomePage (WebApp)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 22:58:45 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+WebApp.Controllers.StudentController.StudentHomePage (WebApp)
+WebApp.Controllers.StudentController.StudentHomePage (WebApp)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 22:59:26 Application starting app
+04/18/2023 22:59:37 HTTP "GET" "/Student/StudentHomePage" responded 200 in 218.5345 ms
+04/18/2023 22:59:37 HTTP "GET" "/css/student-home.css" responded 304 in 12.7267 ms
+04/18/2023 22:59:39 HTTP "GET" "/Student/ChooseCourseGeneral" responded 200 in 11.3304 ms
+04/18/2023 22:59:43 HTTP "GET" "/Student/Notifications" responded 200 in 7.4776 ms
+04/18/2023 22:59:49 HTTP "GET" "/Student/ChooseCourseGeneral" responded 200 in 0.9629 ms
+04/18/2023 22:59:52 HTTP "GET" "/Student/Notifications" responded 200 in 0.7435 ms
+04/18/2023 23:01:49 Application starting app
+04/18/2023 23:13:21 Application starting app
+04/18/2023 23:13:38 HTTP "GET" "/" responded 200 in 16382.3672 ms
+04/18/2023 23:13:42 HTTP "GET" "/Access/Logout" responded 302 in 223.7412 ms
+04/18/2023 23:13:42 HTTP "GET" "/" responded 200 in 3.1589 ms
+04/18/2023 23:13:43 HTTP "GET" "/Access/Login" responded 200 in 32.4977 ms
+04/18/2023 23:13:49 HTTP "POST" "/Access/Login" responded 302 in 1025.9683 ms
+04/18/2023 23:14:25 HTTP "GET" "/Student/StudentHomePage" responded 500 in 35305.3995 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.StudentController.StudentHomePage(String email) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\StudentController.cs:line 20
+   at lambda_method132(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 23:14:25 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.StudentController.StudentHomePage(String email) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\StudentController.cs:line 20
+   at lambda_method132(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 23:15:43 Application starting app
+04/18/2023 23:15:45 HTTP "GET" "/" responded 200 in 198.4780 ms
+04/18/2023 23:15:46 HTTP "GET" "/Access/Logout" responded 302 in 188.0676 ms
+04/18/2023 23:15:47 HTTP "GET" "/" responded 200 in 4.6585 ms
+04/18/2023 23:15:48 HTTP "GET" "/Access/Login" responded 200 in 44.6061 ms
+04/18/2023 23:15:54 HTTP "POST" "/Access/Login" responded 302 in 1611.1981 ms
+04/18/2023 23:15:54 HTTP "GET" "/Student/StudentHomePage" responded 500 in 12.0565 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.StudentController.StudentHomePage(String email) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\StudentController.cs:line 20
+   at lambda_method132(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 23:15:54 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.StudentController.StudentHomePage(String email) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\StudentController.cs:line 20
+   at lambda_method132(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 23:19:27 Application starting app
+04/18/2023 23:19:28 HTTP "GET" "/" responded 200 in 194.8023 ms
+04/18/2023 23:19:32 HTTP "GET" "/Access/Logout" responded 302 in 187.0104 ms
+04/18/2023 23:19:32 HTTP "GET" "/" responded 200 in 4.4421 ms
+04/18/2023 23:19:33 HTTP "GET" "/Access/Login" responded 200 in 42.2972 ms
+04/18/2023 23:19:43 HTTP "POST" "/Access/Login" responded 302 in 1596.7180 ms
+04/18/2023 23:19:43 HTTP "GET" "/Student/StudentHomePage" responded 500 in 12.7812 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.StudentController.StudentHomePage(String email) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\StudentController.cs:line 20
+   at lambda_method132(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 23:19:43 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.StudentController.StudentHomePage(String email) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\StudentController.cs:line 20
+   at lambda_method132(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 23:21:45 Application starting app
+04/18/2023 23:21:46 HTTP "GET" "/" responded 200 in 171.6546 ms
+04/18/2023 23:21:47 HTTP "GET" "/Access/Logout" responded 302 in 204.1872 ms
+04/18/2023 23:21:47 HTTP "GET" "/" responded 200 in 2.6832 ms
+04/18/2023 23:21:48 HTTP "GET" "/Access/Login" responded 200 in 32.1187 ms
+04/18/2023 23:21:48 HTTP "GET" "/js/register.js" responded 304 in 8.0025 ms
+04/18/2023 23:21:55 HTTP "POST" "/Access/Login" responded 302 in 1000.5391 ms
+04/18/2023 23:22:58 Application starting app
+04/18/2023 23:22:59 HTTP "GET" "/" responded 200 in 194.8398 ms
+04/18/2023 23:23:10 HTTP "GET" "/Access/Logout" responded 302 in 15.3953 ms
+04/18/2023 23:23:10 HTTP "GET" "/" responded 200 in 3.3423 ms
+04/18/2023 23:23:16 HTTP "GET" "/Student/StudentHomePage" responded 200 in 17702.2558 ms
+04/18/2023 23:23:21 HTTP "GET" "/Access/Login" responded 200 in 27.2910 ms
+04/18/2023 23:23:27 HTTP "POST" "/Access/Login" responded 302 in 34.6667 ms
+04/18/2023 23:23:31 HTTP "GET" "/Student/StudentHomePage" responded 200 in 3923.9251 ms
+04/18/2023 23:23:31 HTTP "GET" "/css/student-home.css" responded 304 in 12.6290 ms
+04/18/2023 23:24:02 Application starting app
+04/18/2023 23:25:38 Application starting app
+04/18/2023 23:25:42 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1827.7351 ms
+04/18/2023 23:28:28 Application starting app
+04/18/2023 23:28:34 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1758.4782 ms
+04/18/2023 23:28:34 HTTP "GET" "/css/student-home.css" responded 304 in 3.7424 ms
+04/18/2023 23:29:04 Application starting app
+04/18/2023 23:29:16 HTTP "GET" "/Student/StudentHomePage" responded 200 in 2616.9384 ms
+04/18/2023 23:31:02 Application starting app
+04/18/2023 23:31:09 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1764.4239 ms
+04/18/2023 23:31:54 Application starting app
+04/18/2023 23:32:03 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1386.9821 ms
+04/18/2023 23:32:38 Application starting app
+04/18/2023 23:32:44 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1551.0178 ms
+04/18/2023 23:37:45 Application starting app
+04/18/2023 23:37:48 HTTP "GET" "/Student/StudentHomePage" responded 200 in 2955.2058 ms
+04/18/2023 23:37:48 HTTP "GET" "/Student/StudentHomePage" responded 200 in 27.2741 ms
+04/18/2023 23:37:48 HTTP "GET" "/css/student-home.css" responded 304 in 7.1490 ms
+04/18/2023 23:40:16 Application starting app
+04/18/2023 23:40:25 HTTP "GET" "/Student/StudentHomePage" responded 200 in 2489.7791 ms
+04/18/2023 23:43:37 Application starting app
+04/18/2023 23:43:41 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1611.0481 ms
+04/18/2023 23:43:41 HTTP "GET" "/Student/StudentHomePage" responded 200 in 2987.6306 ms
+04/18/2023 23:45:29 HTTP "GET" "/Student/ChooseCourseGeneral" responded 200 in 15.3256 ms
+04/18/2023 23:45:32 HTTP "GET" "/Student/Notifications" responded 200 in 8.9072 ms
