@@ -88,4 +88,9 @@ public class AccountRepository: IAccountRepository
 
             return claims;
     }
+    
+    public Student GetStudent(String email)
+    {
+        return _context.Students.SingleOrDefault(student => student.Email == email);
+    }
 }
