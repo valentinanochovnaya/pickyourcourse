@@ -34,23 +34,26 @@ public class AccessController : Controller
 
         if (userRole != "")
         {
-            List<Claim> claims = new List<Claim>()
+            var claims = this._accountRepository?.Login(modelLogin.Email, modelLogin.Password, userRole);
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var authProperties = new AuthenticationProperties
             {
-                new Claim(ClaimTypes.NameIdentifier, modelLogin.Email), new Claim("Role", userRole)
-            };
-            
-            ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,
-            CookieAuthenticationDefaults.AuthenticationScheme);
-
-            AuthenticationProperties properties = new AuthenticationProperties()
-            {
-                AllowRefresh = true, IsPersistent = true
+                IsPersistent = true, AllowRefresh = true
             };
 
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
-                new ClaimsPrincipal(claimsIdentity), properties);
-
-            return RedirectToAction("Index", "Home");
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
+            switch (userRole)
+            {
+                case "Student":
+                    return RedirectToAction("StudentHomePage", "Student", new { email = modelLogin.Email }, null);
+                case "Professor":
+                    return RedirectToAction("ProfessorHomePage", "Professor", new { email = modelLogin.Email }, null);
+                case "Manager":
+                    return RedirectToAction("ManagerHomePage", "Manager", new {email = modelLogin.Email}, null);
+            }
         }
 
         ViewData["ValidateMessage"] = "User not found";

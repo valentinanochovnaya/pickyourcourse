@@ -1,0 +1,1705 @@
+04/18/2023 17:20:09 Application starting app
+04/18/2023 17:20:11 HTTP "GET" "/" responded 200 in 358.2145 ms
+04/18/2023 17:20:11 HTTP "GET" "/js/welcome-page.js" responded 200 in 14.6835 ms
+04/18/2023 17:20:11 HTTP "GET" "/css/welcome-page.css" responded 200 in 19.2596 ms
+04/18/2023 17:20:11 HTTP "GET" "/WebApp.styles.css" responded 200 in 16.7011 ms
+04/18/2023 17:20:11 HTTP "GET" "/js/site.js" responded 200 in 39.1427 ms
+04/18/2023 17:20:11 HTTP "GET" "/css/site.css" responded 200 in 42.8109 ms
+04/18/2023 17:20:11 HTTP "GET" "/lib/bootstrap/dist/js/bootstrap.bundle.min.js" responded 200 in 56.7873 ms
+04/18/2023 17:20:11 HTTP "GET" "/lib/jquery/dist/jquery.min.js" responded 200 in 68.2872 ms
+04/18/2023 17:20:11 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 75.2207 ms
+04/18/2023 17:20:11 HTTP "GET" "/favicon.ico" responded 200 in 2.9560 ms
+04/18/2023 17:20:13 HTTP "GET" "/Access/Login" responded 200 in 433.4134 ms
+04/18/2023 17:20:14 HTTP "GET" "/js/register.js" responded 200 in 1.6495 ms
+04/18/2023 17:20:14 HTTP "GET" "/css/register.css" responded 200 in 3.5505 ms
+04/18/2023 17:20:52 An error occurred using the connection to database '"pickyourcourse"' on server '""'.
+04/18/2023 17:20:52 An error occurred using the connection to database '"pickyourcourse"' on server '""'.
+04/18/2023 17:20:52 An exception occurred while iterating over the results of a query for context type '"Persistence.DataContext.DataContext"'."
+""System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 185.145.181.238:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()"
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 185.145.181.238:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+04/18/2023 17:20:52 An exception occurred while iterating over the results of a query for context type '"Persistence.DataContext.DataContext"'."
+""System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 185.145.181.238:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()"
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 185.145.181.238:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+04/18/2023 17:20:52 HTTP "POST" "/Access/Login" responded 500 in 17643.9558 ms
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 185.145.181.238:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method49(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Persistence.Services.AccountRepository.GetRole(String email, String password) in C:\Users\Ihor\source\repos\PickYourCourse\Persistence\Services\AccountRepository.cs:line 37
+   at WebApp.Controllers.AccessController.Login(VMLogin modelLogin) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\AccessController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 17:20:52 HTTP "POST" "/Access/Login" responded 500 in 17540.8724 ms
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 185.145.181.238:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method49(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Persistence.Services.AccountRepository.GetRole(String email, String password) in C:\Users\Ihor\source\repos\PickYourCourse\Persistence\Services\AccountRepository.cs:line 37
+   at WebApp.Controllers.AccessController.Login(VMLogin modelLogin) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\AccessController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 17:20:52 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 185.145.181.238:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method49(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Persistence.Services.AccountRepository.GetRole(String email, String password) in C:\Users\Ihor\source\repos\PickYourCourse\Persistence\Services\AccountRepository.cs:line 37
+   at WebApp.Controllers.AccessController.Login(VMLogin modelLogin) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\AccessController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 17:20:52 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 185.145.181.238:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method49(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Persistence.Services.AccountRepository.GetRole(String email, String password) in C:\Users\Ihor\source\repos\PickYourCourse\Persistence\Services\AccountRepository.cs:line 37
+   at WebApp.Controllers.AccessController.Login(VMLogin modelLogin) in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\AccessController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 17:35:33 Application starting app
+04/18/2023 17:35:35 HTTP "GET" "/" responded 200 in 338.6649 ms
+04/18/2023 17:35:39 HTTP "GET" "/Account/Register" responded 200 in 594.9873 ms
+04/18/2023 17:35:39 HTTP "GET" "/js/register.js" responded 304 in 20.1751 ms
+04/18/2023 17:36:09 HTTP "POST" "/Account/Register" responded 200 in 2821.2182 ms
+04/18/2023 17:37:00 Application starting app
+04/18/2023 17:37:02 HTTP "GET" "/" responded 200 in 371.4765 ms
+04/18/2023 17:37:19 HTTP "GET" "/Access/Login" responded 200 in 407.1148 ms
+04/18/2023 17:40:36 Application starting app
+04/18/2023 17:40:36 Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Session.ISessionStore' while attempting to activate 'Microsoft.AspNetCore.Session.SessionMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__26_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+04/18/2023 17:42:25 Application starting app
+04/18/2023 17:42:25 Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Session.ISessionStore' while attempting to activate 'Microsoft.AspNetCore.Session.SessionMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__26_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+04/18/2023 17:43:58 Application starting app
+04/18/2023 17:44:00 HTTP "GET" "/" responded 200 in 326.4982 ms
+04/18/2023 17:44:26 Application starting app
+04/18/2023 17:44:27 HTTP "GET" "/" responded 200 in 315.9637 ms
+04/18/2023 17:44:31 HTTP "GET" "/Access/Login" responded 200 in 363.2142 ms
+04/18/2023 17:44:31 HTTP "GET" "/js/register.js" responded 304 in 18.3058 ms
+04/18/2023 18:06:23 Application starting app
+04/18/2023 18:06:24 HTTP "GET" "/" responded 200 in 209.4209 ms
+04/18/2023 18:06:26 HTTP "GET" "/Access/Login" responded 200 in 231.6366 ms
+04/18/2023 18:06:26 HTTP "GET" "/js/register.js" responded 304 in 17.0518 ms
+04/18/2023 18:06:35 HTTP "POST" "/Access/Login" responded 302 in 1919.0577 ms
+04/18/2023 18:06:35 HTTP "GET" "/" responded 500 in 3.7689 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:06:35 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:08:18 Application starting app
+04/18/2023 18:08:19 HTTP "GET" "/" responded 500 in 121.4751 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:08:19 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:08:42 Application starting app
+04/18/2023 18:08:44 HTTP "GET" "/" responded 500 in 124.5582 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:08:44 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:08:54 HTTP "GET" "/Account/Register" responded 200 in 366.0094 ms
+04/18/2023 18:09:03 HTTP "GET" "/Account/Login" responded 404 in 4.3882 ms
+04/18/2023 18:09:08 HTTP "GET" "/Accoun" responded 404 in 0.2057 ms
+04/18/2023 18:09:11 HTTP "GET" "/Account" responded 404 in 0.2617 ms
+04/18/2023 18:09:15 HTTP "GET" "/" responded 500 in 1.8029 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:09:15 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:10:46 Application starting app
+04/18/2023 18:10:47 HTTP "GET" "/" responded 500 in 159.5175 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:10:47 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:12:00 Application starting app
+04/18/2023 18:12:02 HTTP "GET" "/" responded 200 in 240.1744 ms
+04/18/2023 18:12:04 HTTP "GET" "/Access/Login" responded 302 in 226.3506 ms
+04/18/2023 18:12:04 HTTP "GET" "/" responded 200 in 2.9049 ms
+04/18/2023 18:12:13 HTTP "GET" "/Access/Login" responded 302 in 6.9430 ms
+04/18/2023 18:12:13 HTTP "GET" "/" responded 200 in 0.8042 ms
+04/18/2023 18:12:21 HTTP "GET" "/Access/Login" responded 302 in 1.8225 ms
+04/18/2023 18:12:21 HTTP "GET" "/" responded 200 in 0.9746 ms
+04/18/2023 18:12:22 HTTP "GET" "/Access/Login" responded 302 in 0.5409 ms
+04/18/2023 18:12:22 HTTP "GET" "/" responded 200 in 0.8334 ms
+04/18/2023 18:13:16 HTTP "GET" "/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" responded 200 in 66.2350 ms
+04/18/2023 18:13:16 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 37.1165 ms
+04/18/2023 18:13:18 HTTP "GET" "/" responded 200 in 1.9001 ms
+04/18/2023 18:13:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 32.0703 ms
+04/18/2023 18:13:18 HTTP "GET" "/css/site.css" responded 200 in 11.7862 ms
+04/18/2023 18:13:18 HTTP "GET" "/WebApp.styles.css" responded 200 in 7.8687 ms
+04/18/2023 18:13:18 HTTP "GET" "/js/site.js" responded 200 in 5.6980 ms
+04/18/2023 18:13:18 HTTP "GET" "/js/welcome-page.js" responded 200 in 2.6365 ms
+04/18/2023 18:13:18 HTTP "GET" "/css/welcome-page.css" responded 200 in 11.0289 ms
+04/18/2023 18:13:18 HTTP "GET" "/lib/bootstrap/dist/js/bootstrap.bundle.min.js" responded 200 in 14.2470 ms
+04/18/2023 18:13:18 HTTP "GET" "/lib/jquery/dist/jquery.min.js" responded 200 in 26.2755 ms
+04/18/2023 18:13:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 13.6958 ms
+04/18/2023 18:13:18 HTTP "GET" "/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" responded 200 in 8.4713 ms
+04/18/2023 18:13:18 HTTP "GET" "/favicon.ico" responded 200 in 2.6767 ms
+04/18/2023 18:13:20 HTTP "GET" "/Access/Login" responded 302 in 0.6796 ms
+04/18/2023 18:13:20 HTTP "GET" "/" responded 200 in 1.1157 ms
+04/18/2023 18:13:39 HTTP "GET" "/" responded 200 in 2.9511 ms
+04/18/2023 18:13:41 HTTP "GET" "/Access/Login" responded 200 in 50.6066 ms
+04/18/2023 18:13:41 HTTP "GET" "/js/register.js" responded 200 in 2.9921 ms
+04/18/2023 18:13:41 HTTP "GET" "/css/register.css" responded 200 in 10.4451 ms
+04/18/2023 18:15:55 HTTP "POST" "/Access/Login" responded 302 in 123719.4325 ms
+04/18/2023 18:15:55 HTTP "GET" "/" responded 200 in 1.3806 ms
+04/18/2023 18:16:06 HTTP "GET" "/Access/Login" responded 302 in 1.1301 ms
+04/18/2023 18:16:06 HTTP "GET" "/" responded 200 in 1.1085 ms
+04/18/2023 18:16:23 HTTP "GET" "/" responded 200 in 0.8426 ms
+04/18/2023 18:16:27 HTTP "GET" "/Access/Login" responded 200 in 4.0028 ms
+04/18/2023 18:17:10 Application starting app
+04/18/2023 18:17:20 HTTP "GET" "/" responded 200 in 9365.1266 ms
+04/18/2023 18:17:24 HTTP "GET" "/Access/Login" responded 200 in 245.9293 ms
+04/18/2023 18:18:14 HTTP "POST" "/Access/Login" responded 302 in 43574.1909 ms
+04/18/2023 18:20:20 Application starting app
+04/18/2023 18:21:21 Application starting app
+04/18/2023 18:21:22 HTTP "GET" "/" responded 500 in 168.6565 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:21:22 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:21:22 HTTP "GET" "/" responded 500 in 2.8665 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:21:22 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:21:35 HTTP "GET" "/" responded 200 in 107.5837 ms
+04/18/2023 18:21:59 Application starting app
+04/18/2023 18:22:06 HTTP "GET" "/" responded 200 in 5825.9189 ms
+04/18/2023 18:22:10 HTTP "GET" "/Access/Login" responded 200 in 246.2447 ms
+04/18/2023 18:22:10 HTTP "GET" "/js/register.js" responded 304 in 12.6552 ms
+04/18/2023 18:22:38 HTTP "POST" "/Access/Login" responded 302 in 22063.9012 ms
+04/18/2023 18:27:22 Application starting app
+04/18/2023 18:27:55 Application starting app
+04/18/2023 18:27:56 HTTP "GET" "/" responded 500 in 204.5893 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:27:56 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:27:56 HTTP "GET" "/" responded 500 in 19.1687 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+04/18/2023 18:27:56 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApp.Controllers.HomeController.Index() in C:\Users\Ihor\source\repos\PickYourCourse\WebApp\Controllers\HomeController.cs:line 22
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+04/18/2023 18:28:09 HTTP "GET" "/" responded 200 in 110.2794 ms
+04/18/2023 18:28:28 Application starting app
+04/18/2023 18:28:41 HTTP "GET" "/" responded 200 in 12489.1138 ms
+04/18/2023 18:28:44 HTTP "GET" "/Access/Login" responded 200 in 267.0302 ms
+04/18/2023 18:28:44 HTTP "GET" "/Access/Login" responded 200 in 151.2014 ms
+04/18/2023 18:28:55 HTTP "POST" "/Access/Login" responded 302 in 6687.7756 ms
+04/18/2023 18:33:37 Application starting app
+04/18/2023 18:33:46 HTTP "GET" "/" responded 200 in 7990.6833 ms
+04/18/2023 18:33:50 HTTP "GET" "/Access/Logout" responded 302 in 243.0915 ms
+04/18/2023 18:33:56 HTTP "GET" "/" responded 200 in 6714.6523 ms
+04/18/2023 18:33:59 HTTP "GET" "/Access/Login" responded 200 in 32.3975 ms
+04/18/2023 18:33:59 HTTP "GET" "/js/register.js" responded 304 in 13.1660 ms
+04/18/2023 18:34:08 HTTP "POST" "/Access/Login" responded 302 in 4226.0148 ms
+04/18/2023 18:49:14 Application starting app
+04/18/2023 18:49:15 HTTP "GET" "/" responded 200 in 429.4884 ms
+04/18/2023 18:49:17 HTTP "GET" "/Access/Logout" responded 302 in 339.1219 ms
+04/18/2023 18:49:18 HTTP "GET" "/" responded 200 in 7.5956 ms
+04/18/2023 18:49:19 HTTP "GET" "/Access/Login" responded 200 in 81.5763 ms
+04/18/2023 18:49:19 HTTP "GET" "/js/register.js" responded 304 in 16.7989 ms
+04/18/2023 18:49:28 HTTP "POST" "/Access/Login" responded 302 in 2844.8130 ms
+04/18/2023 18:49:28 HTTP "GET" "/Student/StudentHomePage" responded 200 in 16.4994 ms
+04/18/2023 18:57:28 Application starting app
+04/18/2023 18:57:29 HTTP "GET" "/" responded 200 in 355.0941 ms
+04/18/2023 18:57:34 HTTP "GET" "/Access/Logout" responded 302 in 349.5374 ms
+04/18/2023 18:57:34 HTTP "GET" "/" responded 200 in 9.6489 ms
+04/18/2023 18:57:36 HTTP "GET" "/Access/Login" responded 200 in 78.1741 ms
+04/18/2023 18:57:44 HTTP "POST" "/Access/Login" responded 302 in 2828.9212 ms
+04/18/2023 18:57:44 HTTP "GET" "/Student/StudentHomePage" responded 200 in 19.2485 ms
+04/18/2023 19:16:14 Application starting app
+04/18/2023 19:16:15 HTTP "GET" "/" responded 200 in 381.6789 ms
+04/18/2023 19:16:20 HTTP "GET" "/Access/Logout" responded 302 in 349.4438 ms
+04/18/2023 19:16:20 HTTP "GET" "/" responded 200 in 8.6022 ms
+04/18/2023 19:16:23 HTTP "GET" "/Access/Login" responded 200 in 71.2652 ms
+04/18/2023 19:16:23 HTTP "GET" "/js/register.js" responded 304 in 19.9544 ms
+04/18/2023 19:16:34 HTTP "POST" "/Access/Login" responded 302 in 2976.0679 ms
+04/18/2023 19:16:34 HTTP "GET" "/Student/StudentHomePage" responded 200 in 18.2159 ms
+04/18/2023 19:18:52 HTTP "GET" "/Student/StudentHomePage" responded 200 in 4.5459 ms
+04/18/2023 19:21:11 Application starting app
+04/18/2023 19:21:35 HTTP "GET" "/Access/Login" responded 302 in 297.7645 ms
+04/18/2023 19:21:35 HTTP "GET" "/" responded 200 in 109.0688 ms
+04/18/2023 19:21:37 HTTP "GET" "/Access/Logout" responded 302 in 55.4893 ms
+04/18/2023 19:21:37 HTTP "GET" "/" responded 200 in 6.9179 ms
+04/18/2023 19:21:40 HTTP "GET" "/Access/Login" responded 200 in 47.2092 ms
+04/18/2023 19:21:47 HTTP "POST" "/Access/Login" responded 302 in 1846.9659 ms
+04/18/2023 19:21:47 HTTP "GET" "/Student/StudentHomePage" responded 200 in 15.6845 ms
+04/18/2023 19:21:47 HTTP "GET" "/css/student-home.css" responded 200 in 23.4077 ms
+04/18/2023 19:22:14 HTTP "GET" "/css/student-home.css" responded 200 in 1.9299 ms
+04/18/2023 19:22:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 6.7862 ms
+04/18/2023 19:23:00 HTTP "GET" "/css/student-home.css" responded 200 in 1.0871 ms
+04/18/2023 19:23:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.8334 ms
+04/18/2023 19:23:43 HTTP "GET" "/css/student-home.css" responded 200 in 1.0902 ms
+04/18/2023 19:23:43 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 8.2651 ms
+04/18/2023 19:23:54 HTTP "GET" "/css/student-home.css" responded 200 in 1.1422 ms
+04/18/2023 19:23:54 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.1370 ms
+04/18/2023 19:24:07 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.6068 ms
+04/18/2023 19:24:07 HTTP "GET" "/css/student-home.css" responded 200 in 1.0359 ms
+04/18/2023 19:24:22 HTTP "GET" "/css/student-home.css" responded 200 in 0.9293 ms
+04/18/2023 19:24:22 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.9492 ms
+04/18/2023 19:24:55 HTTP "GET" "/css/student-home.css" responded 200 in 1.0088 ms
+04/18/2023 19:24:55 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.3618 ms
+04/18/2023 19:25:10 HTTP "GET" "/css/student-home.css" responded 200 in 0.6788 ms
+04/18/2023 19:25:10 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.9584 ms
+04/18/2023 19:25:41 HTTP "GET" "/css/student-home.css" responded 200 in 0.8926 ms
+04/18/2023 19:25:41 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.0164 ms
+04/18/2023 19:26:12 HTTP "GET" "/css/student-home.css" responded 200 in 0.9731 ms
+04/18/2023 19:26:12 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 9.9353 ms
+04/18/2023 19:26:19 HTTP "GET" "/css/student-home.css" responded 200 in 2.2117 ms
+04/18/2023 19:26:19 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.4149 ms
+04/18/2023 19:26:25 HTTP "GET" "/css/student-home.css" responded 304 in 1.4734 ms
+04/18/2023 19:26:25 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 4.5122 ms
+04/18/2023 19:26:53 HTTP "GET" "/css/student-home.css" responded 200 in 1.1240 ms
+04/18/2023 19:26:53 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 21.8610 ms
+04/18/2023 19:26:53 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 9.9577 ms
+04/18/2023 19:26:53 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.6444 ms
+04/18/2023 19:26:53 HTTP "GET" "/css/student-home.css" responded 200 in 1.5240 ms
+04/18/2023 19:27:33 HTTP "GET" "/css/student-home.css" responded 200 in 1.7993 ms
+04/18/2023 19:27:33 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.4661 ms
+04/18/2023 19:27:33 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 26.6933 ms
+04/18/2023 19:27:41 HTTP "GET" "/css/student-home.css" responded 200 in 0.8679 ms
+04/18/2023 19:27:41 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.2611 ms
+04/18/2023 19:27:42 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 10.2893 ms
+04/18/2023 19:28:18 HTTP "GET" "/Student/StudentHomePage" responded 200 in 4.0252 ms
+04/18/2023 19:28:18 HTTP "GET" "/css/student-home.css" responded 200 in 5.7083 ms
+04/18/2023 19:28:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 11.6919 ms
+04/18/2023 19:28:18 HTTP "GET" "/favicon.ico" responded 200 in 1.1459 ms
+04/18/2023 19:28:36 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1.8129 ms
+04/18/2023 19:28:36 HTTP "GET" "/css/student-home.css" responded 200 in 1.1754 ms
+04/18/2023 19:29:43 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1.6576 ms
+04/18/2023 19:29:43 HTTP "GET" "/css/student-home.css" responded 304 in 0.5293 ms
+04/18/2023 19:29:55 HTTP "GET" "/Student/StudentHomePage" responded 200 in 2.0724 ms
+04/18/2023 19:29:55 HTTP "GET" "/css/student-home.css" responded 304 in 0.5442 ms
+04/18/2023 19:30:42 HTTP "GET" "/Student/StudentHomePage" responded 200 in 2.8134 ms
+04/18/2023 19:30:42 HTTP "GET" "/css/student-home.css" responded 200 in 3.6895 ms
+04/18/2023 19:31:56 HTTP "GET" "/Student/StudentHomePage" responded 200 in 2.6455 ms
+04/18/2023 19:31:57 HTTP "GET" "/css/student-home.css" responded 200 in 1.3160 ms
+04/18/2023 19:33:28 Application starting app
+04/18/2023 19:33:32 HTTP "GET" "/Student/StudentHomePage" responded 200 in 243.9413 ms
+04/18/2023 19:33:32 HTTP "GET" "/css/student-home.css" responded 200 in 13.7934 ms
+04/18/2023 19:38:13 HTTP "GET" "/Student/StudentHomePage" responded 200 in 11.7232 ms
+04/18/2023 19:38:13 HTTP "GET" "/css/student-home.css" responded 304 in 14.6466 ms
+04/18/2023 19:40:38 HTTP "GET" "/Student/StudentHomePage" responded 200 in 5.8322 ms
+04/18/2023 19:40:38 HTTP "GET" "/css/student-home.css" responded 200 in 2.0342 ms
+04/18/2023 19:41:02 Application starting app
+04/18/2023 19:42:13 HTTP "GET" "/Student/StudentHomePage" responded 200 in 210.5597 ms
+04/18/2023 19:42:13 HTTP "GET" "/css/student-home.css" responded 200 in 21.9273 ms
+04/18/2023 19:44:59 HTTP "GET" "/Student/StudentHomePage" responded 200 in 10.4978 ms
+04/18/2023 19:44:59 HTTP "GET" "/css/student-home.css" responded 200 in 1.8820 ms
+04/18/2023 19:45:38 HTTP "GET" "/Student/StudentHomePage" responded 200 in 7.1109 ms
+04/18/2023 19:45:38 HTTP "GET" "/css/student-home.css" responded 304 in 10.2026 ms
+04/18/2023 19:45:41 HTTP "GET" "/Student/StudentHomePage" responded 200 in 1.3204 ms
+04/18/2023 19:46:12 Application starting app
+04/18/2023 19:46:17 HTTP "GET" "/Student/StudentHomePage" responded 200 in 392.0829 ms
+04/18/2023 19:46:17 HTTP "GET" "/css/student-home.css" responded 304 in 14.6552 ms
+04/18/2023 19:47:22 HTTP "GET" "/css/student-home.css" responded 200 in 10.5235 ms
+04/18/2023 19:47:22 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 27.1609 ms
+04/18/2023 19:47:24 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 15.6241 ms
+04/18/2023 19:47:54 HTTP "GET" "/Student/StudentHomePage" responded 200 in 25.8095 ms
+04/18/2023 19:47:54 HTTP "GET" "/css/student-home.css" responded 200 in 6.5893 ms
+04/18/2023 19:47:54 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 15.1468 ms
+04/18/2023 19:47:55 HTTP "GET" "/favicon.ico" responded 200 in 1.6217 ms
+04/18/2023 19:48:18 Application starting app
+04/18/2023 19:48:20 HTTP "GET" "/Student/StudentHomePage" responded 200 in 325.6980 ms
+04/18/2023 19:48:20 HTTP "GET" "/css/student-home.css" responded 304 in 16.9922 ms
+04/18/2023 19:52:24 HTTP "GET" "/css/student-home.css" responded 200 in 3.1295 ms
+04/18/2023 19:52:24 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 10.9320 ms
+04/18/2023 19:52:27 HTTP "GET" "/css/student-home.css" responded 200 in 0.9100 ms
+04/18/2023 19:52:27 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4827 ms
+04/18/2023 19:52:30 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 14.5733 ms
+04/18/2023 19:54:12 Application starting app
+04/18/2023 19:54:15 HTTP "GET" "/Student/StudentHomePage" responded 200 in 136.3403 ms
+04/18/2023 19:54:15 HTTP "GET" "/css/student-home.css" responded 200 in 10.9365 ms
+04/18/2023 19:54:15 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 24.4128 ms
+04/18/2023 19:54:15 HTTP "GET" "/favicon.ico" responded 200 in 2.1225 ms
+04/18/2023 20:07:56 HTTP "GET" "/Student/StudentHomePage" responded 200 in 7.0800 ms
+04/18/2023 20:07:56 HTTP "GET" "/css/student-home.css" responded 304 in 7.4894 ms
+04/18/2023 20:08:46 HTTP "GET" "/Student/StudentHomePage" responded 200 in 5.9649 ms
+04/18/2023 20:08:50 HTTP "GET" "/Student/StudentHomePage" responded 200 in 0.7175 ms
+04/18/2023 20:08:50 HTTP "GET" "/css/student-home.css" responded 200 in 8.2687 ms
+04/18/2023 20:08:50 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 24.8678 ms
+04/18/2023 20:08:50 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 10.5508 ms
+04/18/2023 20:08:50 HTTP "GET" "/favicon.ico" responded 200 in 1.7014 ms
+04/18/2023 20:09:19 Application starting app
+04/18/2023 20:09:20 HTTP "GET" "/Student/StudentHomePage" responded 200 in 162.6825 ms
+04/18/2023 20:10:56 Application starting app
+04/18/2023 20:10:56 HTTP "GET" "/Student/StudentHomePage" responded 200 in 132.4895 ms
+04/18/2023 20:10:56 HTTP "GET" "/css/student-home.css" responded 200 in 15.0741 ms
+04/18/2023 20:11:28 HTTP "GET" "/css/student-home.css" responded 200 in 2.4251 ms
+04/18/2023 20:11:28 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 12.8351 ms
+04/18/2023 20:11:31 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 15.5400 ms
+04/18/2023 20:11:54 HTTP "GET" "/css/student-home.css" responded 200 in 0.7958 ms
+04/18/2023 20:11:54 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.2826 ms
+04/18/2023 20:11:56 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 12.1932 ms
+04/18/2023 20:12:13 HTTP "GET" "/css/student-home.css" responded 200 in 0.5744 ms
+04/18/2023 20:12:13 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3224 ms
+04/18/2023 20:12:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 4.2253 ms
+04/18/2023 20:12:30 HTTP "GET" "/css/student-home.css" responded 200 in 0.6854 ms
+04/18/2023 20:12:30 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3942 ms
+04/18/2023 20:12:32 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 4.9523 ms
+04/18/2023 20:12:45 HTTP "GET" "/css/student-home.css" responded 200 in 1.6268 ms
+04/18/2023 20:12:45 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.0542 ms
+04/18/2023 20:12:45 HTTP "GET" "/css/student-home.css" responded 200 in 0.7526 ms
+04/18/2023 20:12:45 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3298 ms
+04/18/2023 20:12:47 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 14.2682 ms
+04/18/2023 20:13:02 HTTP "GET" "/css/student-home.css" responded 200 in 0.8638 ms
+04/18/2023 20:13:02 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5699 ms
+04/18/2023 20:13:03 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 22.4786 ms
+04/18/2023 20:13:22 HTTP "GET" "/css/student-home.css" responded 200 in 0.7269 ms
+04/18/2023 20:13:22 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4702 ms
+04/18/2023 20:13:24 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 6.4079 ms
+04/18/2023 20:15:16 HTTP "GET" "/css/student-home.css" responded 200 in 0.8457 ms
+04/18/2023 20:15:16 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2367 ms
+04/18/2023 20:15:32 HTTP "GET" "/css/student-home.css" responded 200 in 0.6434 ms
+04/18/2023 20:15:32 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2379 ms
+04/18/2023 20:15:35 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 23.6557 ms
+04/18/2023 20:15:52 HTTP "GET" "/css/student-home.css" responded 200 in 0.6463 ms
+04/18/2023 20:15:52 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6997 ms
+04/18/2023 20:15:53 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 7.9330 ms
+04/18/2023 20:16:00 HTTP "GET" "/css/student-home.css" responded 200 in 0.7091 ms
+04/18/2023 20:16:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.7632 ms
+04/18/2023 20:16:01 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 4.2873 ms
+04/18/2023 20:16:20 HTTP "GET" "/css/student-home.css" responded 200 in 0.5514 ms
+04/18/2023 20:16:20 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.1466 ms
+04/18/2023 20:16:21 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 4.6146 ms
+04/18/2023 20:16:35 HTTP "GET" "/css/student-home.css" responded 200 in 0.7488 ms
+04/18/2023 20:16:35 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.9000 ms
+04/18/2023 20:16:36 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 3.4409 ms
+04/18/2023 20:19:48 HTTP "GET" "/css/student-home.css" responded 200 in 0.5662 ms
+04/18/2023 20:19:48 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2026 ms
+04/18/2023 20:19:51 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 17.7934 ms
+04/18/2023 20:20:00 HTTP "GET" "/css/student-home.css" responded 200 in 0.6727 ms
+04/18/2023 20:20:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4320 ms
+04/18/2023 20:20:01 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 2.6350 ms
+04/18/2023 20:21:36 HTTP "GET" "/css/student-home.css" responded 200 in 0.7316 ms
+04/18/2023 20:21:36 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 5.6112 ms
+04/18/2023 20:21:36 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 11.6542 ms
+04/18/2023 20:21:42 HTTP "GET" "/Student/StudentHomePage" responded 200 in 6.8641 ms
+04/18/2023 20:21:42 HTTP "GET" "/css/student-home.css" responded 200 in 1.2741 ms
+04/18/2023 20:21:42 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 14.1905 ms
+04/18/2023 20:21:42 HTTP "GET" "/favicon.ico" responded 200 in 0.7130 ms
+04/18/2023 20:22:02 HTTP "GET" "/css/student-home.css" responded 200 in 0.4566 ms
+04/18/2023 20:22:02 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2550 ms
+04/18/2023 20:22:04 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 15.7670 ms
+04/18/2023 20:24:52 HTTP "GET" "/css/student-home.css" responded 200 in 1.6044 ms
+04/18/2023 20:24:52 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.6363 ms
+04/18/2023 20:24:52 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 3.5828 ms
+04/18/2023 20:25:04 HTTP "GET" "/css/student-home.css" responded 200 in 0.6809 ms
+04/18/2023 20:25:04 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4065 ms
+04/18/2023 20:25:06 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 6.0826 ms
+04/18/2023 20:25:19 HTTP "GET" "/css/student-home.css" responded 200 in 0.6535 ms
+04/18/2023 20:25:19 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.9738 ms
+04/18/2023 20:25:20 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 6.8087 ms
+04/18/2023 20:25:39 HTTP "GET" "/css/student-home.css" responded 200 in 0.6268 ms
+04/18/2023 20:25:39 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2242 ms
+04/18/2023 20:25:40 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 7.4162 ms
+04/18/2023 20:25:53 HTTP "GET" "/css/student-home.css" responded 200 in 0.6115 ms
+04/18/2023 20:25:53 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2770 ms
+04/18/2023 20:25:55 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 9.3000 ms
+04/18/2023 20:26:12 HTTP "GET" "/css/student-home.css" responded 200 in 0.6479 ms
+04/18/2023 20:26:12 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4589 ms
+04/18/2023 20:26:13 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 11.6772 ms
+04/18/2023 20:28:04 Application starting app
+04/18/2023 20:28:19 HTTP "GET" "/Student/StudentHomePage" responded 200 in 131.4999 ms
+04/18/2023 20:28:19 HTTP "GET" "/css/student-home.css" responded 200 in 14.9097 ms
+04/18/2023 20:28:19 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 14.9225 ms
+04/18/2023 20:28:19 HTTP "GET" "/favicon.ico" responded 200 in 2.5977 ms
+04/18/2023 20:28:53 Application starting app
+04/18/2023 20:28:54 HTTP "GET" "/Student/StudentHomePage" responded 200 in 198.4953 ms
+04/18/2023 20:28:54 HTTP "GET" "/css/student-home.css" responded 304 in 13.8942 ms
+04/18/2023 20:29:15 HTTP "GET" "/css/student-home.css" responded 200 in 2.6773 ms
+04/18/2023 20:29:15 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 10.4206 ms
+04/18/2023 20:29:17 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 17.6022 ms
+04/18/2023 20:29:32 HTTP "GET" "/css/student-home.css" responded 200 in 1.0946 ms
+04/18/2023 20:29:32 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.8209 ms
+04/18/2023 20:29:32 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 6.2861 ms
+04/18/2023 20:32:02 Application starting app
+04/18/2023 20:32:03 HTTP "GET" "/Student/StudentHomePage" responded 200 in 140.5652 ms
+04/18/2023 20:32:03 HTTP "GET" "/css/student-home.css" responded 200 in 6.0960 ms
+04/18/2023 20:32:03 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 19.5389 ms
+04/18/2023 20:32:03 HTTP "GET" "/favicon.ico" responded 200 in 1.9225 ms
+04/18/2023 20:32:38 Application starting app
+04/18/2023 20:32:51 HTTP "GET" "/Student/StudentHomePage" responded 200 in 120.0857 ms
+04/18/2023 20:32:51 HTTP "GET" "/css/student-home.css" responded 304 in 12.7479 ms
+04/18/2023 20:34:24 Application starting app
+04/18/2023 20:34:26 HTTP "GET" "/Student/StudentHomePage" responded 200 in 134.7627 ms
+04/18/2023 20:34:26 HTTP "GET" "/css/student-home.css" responded 304 in 11.7502 ms
+04/18/2023 20:35:39 Application starting app
+04/18/2023 20:35:40 HTTP "GET" "/Student/StudentHomePage" responded 200 in 142.6273 ms
+04/18/2023 20:35:40 HTTP "GET" "/css/student-home.css" responded 304 in 7.9896 ms
+04/18/2023 20:36:38 Application starting app
+04/18/2023 20:37:01 HTTP "GET" "/Student/StudentHomePage" responded 200 in 122.1686 ms
+04/18/2023 20:37:01 HTTP "GET" "/css/student-home.css" responded 304 in 11.0736 ms
+04/18/2023 20:37:38 Application starting app
+04/18/2023 20:37:57 HTTP "GET" "/Student/StudentHomePage" responded 200 in 123.6132 ms
+04/18/2023 20:37:57 HTTP "GET" "/css/student-home.css" responded 304 in 9.2948 ms
+04/18/2023 20:44:24 Application starting app
+04/18/2023 20:44:37 HTTP "GET" "/Student/StudentHomePage" responded 200 in 120.6061 ms
+04/18/2023 20:44:37 HTTP "GET" "/css/student-home.css" responded 304 in 6.4305 ms
+04/18/2023 20:44:37 HTTP "GET" "/font-awesome-4.7.0/css/font-awesome.min.css" responded 200 in 6.5268 ms
+04/18/2023 20:44:37 HTTP "GET" "/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" responded 200 in 9.7670 ms
+04/18/2023 20:45:50 Application starting app
+04/18/2023 20:45:51 HTTP "GET" "/Student/StudentHomePage" responded 200 in 139.2960 ms
+04/18/2023 20:46:55 Application starting app
+04/18/2023 20:46:56 HTTP "GET" "/Student/StudentHomePage" responded 200 in 135.4249 ms
+04/18/2023 20:46:56 HTTP "GET" "/css/student-home.css" responded 304 in 10.2506 ms
+04/18/2023 20:50:15 Application starting app
+04/18/2023 20:50:19 HTTP "GET" "/Student/StudentHomePage" responded 200 in 155.2663 ms
+04/18/2023 20:50:20 HTTP "GET" "/css/student-home.css" responded 304 in 8.9266 ms
+04/18/2023 20:50:20 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 16.2080 ms
+04/18/2023 20:51:18 Application starting app
+04/18/2023 20:51:41 HTTP "GET" "/Student/StudentHomePage" responded 200 in 120.3241 ms
+04/18/2023 20:53:54 Application starting app
+04/18/2023 20:54:02 HTTP "GET" "/Student/StudentHomePage" responded 200 in 123.6662 ms
+04/18/2023 20:54:03 HTTP "GET" "/css/student-home.css" responded 304 in 9.4391 ms
+04/18/2023 20:54:58 Application starting app
+04/18/2023 20:54:59 HTTP "GET" "/Student/StudentHomePage" responded 200 in 182.3043 ms
+04/18/2023 20:55:50 Application starting app
+04/18/2023 20:55:51 HTTP "GET" "/Student/StudentHomePage" responded 200 in 139.7427 ms
+04/18/2023 20:56:37 Application starting app
+04/18/2023 20:56:40 HTTP "GET" "/Student/StudentHomePage" responded 200 in 132.7056 ms
+04/18/2023 20:56:40 HTTP "GET" "/css/student-home.css" responded 304 in 9.4611 ms
+04/18/2023 20:57:04 Application starting app
+04/18/2023 21:03:05 Application starting app
+04/18/2023 21:03:06 HTTP "GET" "/Student/StudentHomePage" responded 200 in 142.9540 ms
+04/18/2023 21:03:06 HTTP "GET" "/css/student-home.css" responded 200 in 6.5006 ms
+04/18/2023 21:05:56 HTTP "GET" "/css/student-home.css" responded 200 in 2.8054 ms
+04/18/2023 21:05:56 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 18.1374 ms
+04/18/2023 21:05:56 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 17.9180 ms
+04/18/2023 21:05:58 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 3.8916 ms
+04/18/2023 21:06:11 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0886 ms
+04/18/2023 21:06:11 HTTP "GET" "/css/student-home.css" responded 200 in 1.2231 ms
+04/18/2023 21:06:11 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.0728 ms
+04/18/2023 21:06:12 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 7.2480 ms
+04/18/2023 21:09:37 HTTP "GET" "/css/student-home.css" responded 200 in 0.7786 ms
+04/18/2023 21:09:37 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 4.3723 ms
+04/18/2023 21:09:37 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 10.2162 ms
+04/18/2023 21:09:39 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 4.7012 ms
+04/18/2023 21:10:17 HTTP "GET" "/css/student-home.css" responded 200 in 0.8139 ms
+04/18/2023 21:10:17 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.6334 ms
+04/18/2023 21:10:17 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 6.2190 ms
+04/18/2023 21:10:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 7.1025 ms
+04/18/2023 21:11:40 HTTP "GET" "/css/student-home.css" responded 200 in 0.5898 ms
+04/18/2023 21:11:40 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 5.6535 ms
+04/18/2023 21:11:40 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 7.6865 ms
+04/18/2023 21:11:40 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 2.7730 ms
+04/18/2023 21:12:09 Application starting app
+04/18/2023 21:12:09 HTTP "GET" "/Student/StudentHomePage" responded 200 in 164.1231 ms
+04/18/2023 21:12:09 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 28.0643 ms
+04/18/2023 21:12:09 HTTP "GET" "/css/student-home.css" responded 200 in 9.0775 ms
+04/18/2023 21:12:09 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 27.4837 ms
+04/18/2023 21:12:10 HTTP "GET" "/favicon.ico" responded 200 in 1.1750 ms
+04/18/2023 21:13:24 HTTP "GET" "/css/student-home.css" responded 200 in 0.8108 ms
+04/18/2023 21:13:24 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0613 ms
+04/18/2023 21:13:24 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.5427 ms
+04/18/2023 21:13:25 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 7.4149 ms
+04/18/2023 21:16:10 HTTP "GET" "/css/student-home.css" responded 200 in 1.9768 ms
+04/18/2023 21:16:10 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.3508 ms
+04/18/2023 21:16:10 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2460 ms
+04/18/2023 21:16:10 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 2.4569 ms
+04/18/2023 21:16:23 HTTP "GET" "/css/student-home.css" responded 200 in 0.8330 ms
+04/18/2023 21:16:23 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1303 ms
+04/18/2023 21:16:23 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 8.3666 ms
+04/18/2023 21:16:26 HTTP "GET" "/css/student-home.css" responded 200 in 1.1794 ms
+04/18/2023 21:16:26 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.1229 ms
+04/18/2023 21:16:26 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.4087 ms
+04/18/2023 21:16:28 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 2.8552 ms
+04/18/2023 21:17:54 HTTP "GET" "/css/student-home.css" responded 200 in 0.8436 ms
+04/18/2023 21:17:54 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 4.9924 ms
+04/18/2023 21:17:54 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 5.8814 ms
+04/18/2023 21:17:56 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 5.8185 ms
+04/18/2023 21:18:05 HTTP "GET" "/css/student-home.css" responded 200 in 0.7758 ms
+04/18/2023 21:18:05 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.9699 ms
+04/18/2023 21:18:05 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2365 ms
+04/18/2023 21:18:06 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 8.1784 ms
+04/18/2023 21:18:14 HTTP "GET" "/css/student-home.css" responded 200 in 0.7286 ms
+04/18/2023 21:18:14 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1766 ms
+04/18/2023 21:18:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.3519 ms
+04/18/2023 21:18:17 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 3.9942 ms
+04/18/2023 21:18:43 HTTP "GET" "/css/student-home.css" responded 200 in 0.6619 ms
+04/18/2023 21:18:43 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8379 ms
+04/18/2023 21:18:43 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.0479 ms
+04/18/2023 21:19:01 HTTP "GET" "/css/student-home.css" responded 200 in 0.7941 ms
+04/18/2023 21:19:01 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0155 ms
+04/18/2023 21:19:01 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.6757 ms
+04/18/2023 21:19:10 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 6.7410 ms
+04/18/2023 21:19:10 HTTP "GET" "/css/student-home.css" responded 200 in 7.1874 ms
+04/18/2023 21:19:10 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 8.1954 ms
+04/18/2023 21:19:16 HTTP "GET" "/css/student-home.css" responded 200 in 0.7736 ms
+04/18/2023 21:19:16 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.1766 ms
+04/18/2023 21:19:16 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 7.0042 ms
+04/18/2023 21:19:26 HTTP "GET" "/css/student-home.css" responded 200 in 0.4980 ms
+04/18/2023 21:19:26 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.6938 ms
+04/18/2023 21:19:26 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 6.5869 ms
+04/18/2023 21:19:43 HTTP "GET" "/css/student-home.css" responded 200 in 0.5791 ms
+04/18/2023 21:19:43 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7869 ms
+04/18/2023 21:19:43 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6082 ms
+04/18/2023 21:20:09 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1578 ms
+04/18/2023 21:20:09 HTTP "GET" "/css/student-home.css" responded 200 in 1.3400 ms
+04/18/2023 21:20:09 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.6956 ms
+04/18/2023 21:20:18 HTTP "GET" "/css/student-home.css" responded 200 in 0.6025 ms
+04/18/2023 21:20:18 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0301 ms
+04/18/2023 21:20:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3732 ms
+04/18/2023 21:20:24 HTTP "GET" "/css/student-home.css" responded 200 in 0.5239 ms
+04/18/2023 21:20:24 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0687 ms
+04/18/2023 21:20:24 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.9198 ms
+04/18/2023 21:20:29 HTTP "GET" "/css/student-home.css" responded 200 in 0.6646 ms
+04/18/2023 21:20:29 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 7.9823 ms
+04/18/2023 21:20:29 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.4212 ms
+04/18/2023 21:20:36 HTTP "GET" "/css/student-home.css" responded 200 in 0.6294 ms
+04/18/2023 21:20:36 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9545 ms
+04/18/2023 21:20:36 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5112 ms
+04/18/2023 21:20:45 HTTP "GET" "/css/student-home.css" responded 200 in 0.4935 ms
+04/18/2023 21:20:45 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1235 ms
+04/18/2023 21:20:45 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.4637 ms
+04/18/2023 21:20:50 HTTP "GET" "/css/student-home.css" responded 200 in 0.5294 ms
+04/18/2023 21:20:50 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5919 ms
+04/18/2023 21:20:50 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1457 ms
+04/18/2023 21:20:56 HTTP "GET" "/css/student-home.css" responded 200 in 0.6450 ms
+04/18/2023 21:20:56 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7892 ms
+04/18/2023 21:20:56 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4369 ms
+04/18/2023 21:21:05 HTTP "GET" "/css/student-home.css" responded 200 in 0.4953 ms
+04/18/2023 21:21:05 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9926 ms
+04/18/2023 21:21:05 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6232 ms
+04/18/2023 21:21:09 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.0428 ms
+04/18/2023 21:21:09 HTTP "GET" "/css/student-home.css" responded 200 in 0.8758 ms
+04/18/2023 21:21:09 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8354 ms
+04/18/2023 21:21:14 HTTP "GET" "/css/student-home.css" responded 200 in 0.5565 ms
+04/18/2023 21:21:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.7215 ms
+04/18/2023 21:21:14 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.2725 ms
+04/18/2023 21:21:21 HTTP "GET" "/css/student-home.css" responded 200 in 0.4255 ms
+04/18/2023 21:21:21 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.1485 ms
+04/18/2023 21:21:21 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9894 ms
+04/18/2023 21:21:38 HTTP "GET" "/css/student-home.css" responded 200 in 0.4401 ms
+04/18/2023 21:21:38 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1371 ms
+04/18/2023 21:21:38 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2515 ms
+04/18/2023 21:21:59 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.1189 ms
+04/18/2023 21:21:59 HTTP "GET" "/css/student-home.css" responded 200 in 0.6593 ms
+04/18/2023 21:21:59 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.8294 ms
+04/18/2023 21:22:06 HTTP "GET" "/css/student-home.css" responded 200 in 0.7133 ms
+04/18/2023 21:22:06 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 5.1271 ms
+04/18/2023 21:22:06 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0154 ms
+04/18/2023 21:22:34 HTTP "GET" "/css/student-home.css" responded 200 in 1.2269 ms
+04/18/2023 21:22:34 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.7871 ms
+04/18/2023 21:22:34 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 5.4314 ms
+04/18/2023 21:22:40 HTTP "GET" "/css/student-home.css" responded 200 in 0.6110 ms
+04/18/2023 21:22:40 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8872 ms
+04/18/2023 21:22:40 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4359 ms
+04/18/2023 21:58:20 Application starting app
+04/18/2023 21:58:21 HTTP "GET" "/Student/StudentHomePage" responded 200 in 215.0633 ms
+04/18/2023 21:58:21 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 23.5373 ms
+04/18/2023 21:58:21 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 23.5964 ms
+04/18/2023 21:58:21 HTTP "GET" "/css/student-home.css" responded 200 in 29.2447 ms
+04/18/2023 21:58:21 HTTP "GET" "/favicon.ico" responded 200 in 2.8785 ms
+04/18/2023 21:59:10 HTTP "GET" "/css/student-home.css" responded 200 in 0.9005 ms
+04/18/2023 21:59:10 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2487 ms
+04/18/2023 21:59:10 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.7192 ms
+04/18/2023 21:59:15 HTTP "GET" "/Student/StudentHomePage" responded 200 in 6.4601 ms
+04/18/2023 21:59:15 HTTP "GET" "/css/student-home.css" responded 200 in 1.3901 ms
+04/18/2023 21:59:15 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.1457 ms
+04/18/2023 21:59:15 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.7276 ms
+04/18/2023 21:59:15 HTTP "GET" "/favicon.ico" responded 200 in 1.0622 ms
+04/18/2023 21:59:32 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.7263 ms
+04/18/2023 21:59:32 HTTP "GET" "/css/student-home.css" responded 200 in 1.3734 ms
+04/18/2023 21:59:32 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.6048 ms
+04/18/2023 22:00:00 HTTP "GET" "/css/student-home.css" responded 200 in 0.8068 ms
+04/18/2023 22:00:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.0917 ms
+04/18/2023 22:00:00 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.6228 ms
+04/18/2023 22:01:21 Application starting app
+04/18/2023 22:02:18 HTTP "GET" "/Student/StudentHomePage" responded 200 in 115.2317 ms
+04/18/2023 22:02:18 HTTP "GET" "/css/student-home.css" responded 200 in 4.9123 ms
+04/18/2023 22:02:18 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 13.7526 ms
+04/18/2023 22:02:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 14.1768 ms
+04/18/2023 22:02:18 HTTP "GET" "/favicon.ico" responded 200 in 1.9429 ms
+04/18/2023 22:02:50 HTTP "GET" "/css/student-home.css" responded 200 in 0.8313 ms
+04/18/2023 22:02:50 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 6.0362 ms
+04/18/2023 22:02:50 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 6.6985 ms
+04/18/2023 22:03:25 HTTP "GET" "/css/student-home.css" responded 200 in 0.5845 ms
+04/18/2023 22:03:25 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5262 ms
+04/18/2023 22:03:25 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.8305 ms
+04/18/2023 22:04:11 HTTP "GET" "/css/student-home.css" responded 200 in 0.9604 ms
+04/18/2023 22:04:11 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1861 ms
+04/18/2023 22:04:11 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 8.4007 ms
+04/18/2023 22:04:20 HTTP "GET" "/css/student-home.css" responded 200 in 0.8326 ms
+04/18/2023 22:04:20 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 8.6732 ms
+04/18/2023 22:04:20 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 8.9066 ms
+04/18/2023 22:04:53 HTTP "GET" "/css/student-home.css" responded 200 in 0.5916 ms
+04/18/2023 22:04:53 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4387 ms
+04/18/2023 22:04:53 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1908 ms
+04/18/2023 22:06:07 HTTP "GET" "/css/student-home.css" responded 200 in 0.7115 ms
+04/18/2023 22:06:07 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.1736 ms
+04/18/2023 22:06:07 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.2392 ms
+04/18/2023 22:06:09 HTTP "GET" "/css/student-home.css" responded 200 in 0.5724 ms
+04/18/2023 22:06:09 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7671 ms
+04/18/2023 22:06:09 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4198 ms
+04/18/2023 22:07:17 HTTP "GET" "/css/student-home.css" responded 200 in 0.7491 ms
+04/18/2023 22:07:17 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 7.8101 ms
+04/18/2023 22:07:17 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 8.9145 ms
+04/18/2023 22:07:36 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5182 ms
+04/18/2023 22:07:36 HTTP "GET" "/css/student-home.css" responded 200 in 1.6516 ms
+04/18/2023 22:07:36 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.3498 ms
+04/18/2023 22:07:42 HTTP "GET" "/Student/StudentHomePage" responded 200 in 4.8381 ms
+04/18/2023 22:07:42 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.0678 ms
+04/18/2023 22:07:42 HTTP "GET" "/css/student-home.css" responded 200 in 2.3407 ms
+04/18/2023 22:07:42 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.8958 ms
+04/18/2023 22:07:42 HTTP "GET" "/favicon.ico" responded 200 in 0.8065 ms
+04/18/2023 22:08:12 HTTP "GET" "/css/student-home.css" responded 200 in 0.8800 ms
+04/18/2023 22:08:12 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.6915 ms
+04/18/2023 22:08:12 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.7599 ms
+04/18/2023 22:08:18 HTTP "GET" "/css/student-home.css" responded 200 in 0.5739 ms
+04/18/2023 22:08:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6878 ms
+04/18/2023 22:08:18 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.4449 ms
+04/18/2023 22:09:10 HTTP "GET" "/css/student-home.css" responded 200 in 0.5975 ms
+04/18/2023 22:09:10 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.3147 ms
+04/18/2023 22:09:10 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.1541 ms
+04/18/2023 22:09:21 HTTP "GET" "/css/student-home.css" responded 200 in 0.6291 ms
+04/18/2023 22:09:21 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.1483 ms
+04/18/2023 22:09:21 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.2416 ms
+04/18/2023 22:09:33 HTTP "GET" "/css/student-home.css" responded 200 in 0.4590 ms
+04/18/2023 22:09:33 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 4.0195 ms
+04/18/2023 22:09:33 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 5.0300 ms
+04/18/2023 22:09:44 HTTP "GET" "/css/student-home.css" responded 200 in 0.7371 ms
+04/18/2023 22:09:44 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9122 ms
+04/18/2023 22:09:44 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5553 ms
+04/18/2023 22:10:00 HTTP "GET" "/css/student-home.css" responded 200 in 0.7931 ms
+04/18/2023 22:10:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 8.5109 ms
+04/18/2023 22:10:00 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 7.8744 ms
+04/18/2023 22:10:01 HTTP "GET" "/css/student-home.css" responded 200 in 0.5818 ms
+04/18/2023 22:10:01 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.6942 ms
+04/18/2023 22:10:01 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2847 ms
+04/18/2023 22:10:16 HTTP "GET" "/css/student-home.css" responded 200 in 0.6473 ms
+04/18/2023 22:10:16 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9720 ms
+04/18/2023 22:10:16 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6951 ms
+04/18/2023 22:10:44 HTTP "GET" "/css/student-home.css" responded 200 in 0.5285 ms
+04/18/2023 22:10:44 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.2883 ms
+04/18/2023 22:10:44 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.4486 ms
+04/18/2023 22:11:15 HTTP "GET" "/css/student-home.css" responded 200 in 0.6113 ms
+04/18/2023 22:11:15 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.8572 ms
+04/18/2023 22:11:15 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0994 ms
+04/18/2023 22:11:44 HTTP "GET" "/css/student-home.css" responded 200 in 1.7579 ms
+04/18/2023 22:11:44 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.2276 ms
+04/18/2023 22:11:44 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.2658 ms
+04/18/2023 22:12:04 HTTP "GET" "/css/student-home.css" responded 200 in 0.4838 ms
+04/18/2023 22:12:04 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9515 ms
+04/18/2023 22:12:04 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.1721 ms
+04/18/2023 22:13:00 HTTP "GET" "/css/student-home.css" responded 200 in 1.2144 ms
+04/18/2023 22:13:00 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.6687 ms
+04/18/2023 22:13:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.1605 ms
+04/18/2023 22:13:00 HTTP "GET" "/css/student-home.css" responded 200 in 0.4558 ms
+04/18/2023 22:13:00 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7884 ms
+04/18/2023 22:13:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.1129 ms
+04/18/2023 22:13:30 HTTP "GET" "/css/student-home.css" responded 200 in 0.9598 ms
+04/18/2023 22:13:30 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.8745 ms
+04/18/2023 22:13:30 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1266 ms
+04/18/2023 22:13:39 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.1952 ms
+04/18/2023 22:13:39 HTTP "GET" "/css/student-home.css" responded 200 in 1.0989 ms
+04/18/2023 22:13:39 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.3454 ms
+04/18/2023 22:13:50 HTTP "GET" "/css/student-home.css" responded 200 in 0.5127 ms
+04/18/2023 22:13:50 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7811 ms
+04/18/2023 22:13:50 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3312 ms
+04/18/2023 22:14:04 HTTP "GET" "/css/student-home.css" responded 200 in 0.9115 ms
+04/18/2023 22:14:04 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2496 ms
+04/18/2023 22:14:04 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 4.0784 ms
+04/18/2023 22:14:32 HTTP "GET" "/css/student-home.css" responded 200 in 1.2333 ms
+04/18/2023 22:14:32 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.8639 ms
+04/18/2023 22:14:32 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.7644 ms
+04/18/2023 22:14:49 HTTP "GET" "/css/student-home.css" responded 200 in 0.5950 ms
+04/18/2023 22:14:49 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5866 ms
+04/18/2023 22:14:49 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.1728 ms
+04/18/2023 22:14:57 HTTP "GET" "/css/student-home.css" responded 200 in 0.5156 ms
+04/18/2023 22:14:57 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9471 ms
+04/18/2023 22:14:57 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.1808 ms
+04/18/2023 22:15:07 HTTP "GET" "/css/student-home.css" responded 200 in 0.6284 ms
+04/18/2023 22:15:07 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.3558 ms
+04/18/2023 22:15:07 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2521 ms
+04/18/2023 22:15:16 HTTP "GET" "/css/student-home.css" responded 200 in 0.5417 ms
+04/18/2023 22:15:16 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8199 ms
+04/18/2023 22:15:16 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6521 ms
+04/18/2023 22:15:25 HTTP "GET" "/css/student-home.css" responded 200 in 1.0474 ms
+04/18/2023 22:15:25 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2419 ms
+04/18/2023 22:15:25 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0113 ms
+04/18/2023 22:15:25 HTTP "GET" "/css/student-home.css" responded 200 in 0.3851 ms
+04/18/2023 22:15:25 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7010 ms
+04/18/2023 22:15:25 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.1319 ms
+04/18/2023 22:15:39 HTTP "GET" "/css/student-home.css" responded 200 in 0.7365 ms
+04/18/2023 22:15:39 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1563 ms
+04/18/2023 22:15:39 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2958 ms
+04/18/2023 22:15:52 HTTP "GET" "/css/student-home.css" responded 200 in 0.4857 ms
+04/18/2023 22:15:52 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7632 ms
+04/18/2023 22:15:52 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3707 ms
+04/18/2023 22:16:17 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.2651 ms
+04/18/2023 22:16:17 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.4343 ms
+04/18/2023 22:16:17 HTTP "GET" "/css/student-home.css" responded 200 in 2.2519 ms
+04/18/2023 22:16:29 HTTP "GET" "/css/student-home.css" responded 200 in 0.5577 ms
+04/18/2023 22:16:29 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6636 ms
+04/18/2023 22:16:29 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1821 ms
+04/18/2023 22:16:40 HTTP "GET" "/css/student-home.css" responded 200 in 0.4891 ms
+04/18/2023 22:16:40 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7067 ms
+04/18/2023 22:16:40 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2407 ms
+04/18/2023 22:16:49 HTTP "GET" "/css/student-home.css" responded 200 in 0.4677 ms
+04/18/2023 22:16:49 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.2242 ms
+04/18/2023 22:16:49 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.1849 ms
+04/18/2023 22:16:52 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.5221 ms
+04/18/2023 22:16:52 HTTP "GET" "/css/student-home.css" responded 200 in 1.7919 ms
+04/18/2023 22:16:52 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 8.2662 ms
+04/18/2023 22:17:14 HTTP "GET" "/css/student-home.css" responded 200 in 1.0422 ms
+04/18/2023 22:17:14 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9542 ms
+04/18/2023 22:17:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.8267 ms
+04/18/2023 22:17:20 HTTP "GET" "/css/student-home.css" responded 200 in 0.6532 ms
+04/18/2023 22:17:20 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9798 ms
+04/18/2023 22:17:20 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5190 ms
+04/18/2023 22:17:23 HTTP "GET" "/css/student-home.css" responded 200 in 0.7875 ms
+04/18/2023 22:17:23 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.7313 ms
+04/18/2023 22:17:23 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.4151 ms
+04/18/2023 22:18:22 HTTP "GET" "/css/student-home.css" responded 200 in 0.7808 ms
+04/18/2023 22:18:22 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.2077 ms
+04/18/2023 22:18:22 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.1231 ms
+04/18/2023 22:18:32 HTTP "GET" "/css/student-home.css" responded 200 in 0.6069 ms
+04/18/2023 22:18:32 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8505 ms
+04/18/2023 22:18:32 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3276 ms
+04/18/2023 22:18:54 HTTP "GET" "/css/student-home.css" responded 200 in 1.0707 ms
+04/18/2023 22:18:54 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.4671 ms
+04/18/2023 22:18:54 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.5847 ms
+04/18/2023 22:19:02 HTTP "GET" "/css/student-home.css" responded 200 in 4.8107 ms
+04/18/2023 22:19:02 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 6.7325 ms
+04/18/2023 22:19:02 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 9.8396 ms
+04/18/2023 22:19:03 HTTP "GET" "/css/student-home.css" responded 200 in 1.2249 ms
+04/18/2023 22:19:03 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.8147 ms
+04/18/2023 22:19:03 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.5868 ms
+04/18/2023 22:19:09 HTTP "GET" "/css/student-home.css" responded 200 in 0.6017 ms
+04/18/2023 22:19:09 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2768 ms
+04/18/2023 22:19:09 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0617 ms
+04/18/2023 22:19:21 HTTP "GET" "/css/student-home.css" responded 200 in 0.5001 ms
+04/18/2023 22:19:21 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9428 ms
+04/18/2023 22:19:21 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3525 ms
+04/18/2023 22:19:30 HTTP "GET" "/css/student-home.css" responded 200 in 0.4246 ms
+04/18/2023 22:19:30 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8386 ms
+04/18/2023 22:19:30 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4215 ms
+04/18/2023 22:19:42 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7399 ms
+04/18/2023 22:19:42 HTTP "GET" "/css/student-home.css" responded 200 in 0.7579 ms
+04/18/2023 22:19:42 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3262 ms
+04/18/2023 22:19:50 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5371 ms
+04/18/2023 22:19:50 HTTP "GET" "/css/student-home.css" responded 200 in 0.5405 ms
+04/18/2023 22:19:50 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9458 ms
+04/18/2023 22:20:17 HTTP "GET" "/css/student-home.css" responded 200 in 0.4449 ms
+04/18/2023 22:20:17 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.2749 ms
+04/18/2023 22:20:17 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.7340 ms
+04/18/2023 22:20:28 HTTP "GET" "/css/student-home.css" responded 200 in 0.5262 ms
+04/18/2023 22:20:28 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.7109 ms
+04/18/2023 22:20:28 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.7769 ms
+04/18/2023 22:20:46 HTTP "GET" "/css/student-home.css" responded 200 in 3.6551 ms
+04/18/2023 22:20:46 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 4.1581 ms
+04/18/2023 22:20:46 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 5.1506 ms
+04/18/2023 22:21:05 HTTP "GET" "/css/student-home.css" responded 200 in 0.5215 ms
+04/18/2023 22:21:05 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0711 ms
+04/18/2023 22:21:05 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 7.7046 ms
+04/18/2023 22:21:14 HTTP "GET" "/css/student-home.css" responded 200 in 1.1585 ms
+04/18/2023 22:21:14 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1258 ms
+04/18/2023 22:21:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.9683 ms
+04/18/2023 22:21:23 HTTP "GET" "/css/student-home.css" responded 200 in 0.4770 ms
+04/18/2023 22:21:23 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0266 ms
+04/18/2023 22:21:23 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.5325 ms
+04/18/2023 22:21:31 HTTP "GET" "/css/student-home.css" responded 200 in 0.5366 ms
+04/18/2023 22:21:31 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1579 ms
+04/18/2023 22:21:31 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.9865 ms
+04/18/2023 22:21:58 HTTP "GET" "/css/student-home.css" responded 200 in 0.5103 ms
+04/18/2023 22:21:58 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.3701 ms
+04/18/2023 22:21:58 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.2367 ms
+04/18/2023 22:22:38 HTTP "GET" "/css/student-home.css" responded 200 in 0.5582 ms
+04/18/2023 22:22:38 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.6158 ms
+04/18/2023 22:22:38 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.5562 ms
+04/18/2023 22:22:50 HTTP "GET" "/css/student-home.css" responded 200 in 0.5911 ms
+04/18/2023 22:22:50 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8280 ms
+04/18/2023 22:22:50 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5042 ms
+04/18/2023 22:23:10 HTTP "GET" "/css/student-home.css" responded 200 in 0.8048 ms
+04/18/2023 22:23:10 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0727 ms
+04/18/2023 22:23:10 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.3043 ms
+04/18/2023 22:23:12 HTTP "GET" "/css/student-home.css" responded 200 in 0.6087 ms
+04/18/2023 22:23:12 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9986 ms
+04/18/2023 22:23:12 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 5.1999 ms
+04/18/2023 22:23:30 HTTP "GET" "/css/student-home.css" responded 200 in 0.5209 ms
+04/18/2023 22:23:30 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4251 ms
+04/18/2023 22:23:30 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.3256 ms
+04/18/2023 22:23:39 HTTP "GET" "/css/student-home.css" responded 200 in 0.5040 ms
+04/18/2023 22:23:39 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8706 ms
+04/18/2023 22:23:39 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.3243 ms
+04/18/2023 22:25:00 HTTP "GET" "/css/student-home.css" responded 200 in 0.6295 ms
+04/18/2023 22:25:00 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.7412 ms
+04/18/2023 22:25:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 11.7779 ms
+04/18/2023 22:25:13 HTTP "GET" "/css/student-home.css" responded 200 in 0.4967 ms
+04/18/2023 22:25:13 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.4379 ms
+04/18/2023 22:25:13 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.1502 ms
+04/18/2023 22:25:19 HTTP "GET" "/css/student-home.css" responded 200 in 1.7463 ms
+04/18/2023 22:25:19 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.8733 ms
+04/18/2023 22:25:19 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.6945 ms
+04/18/2023 22:25:29 HTTP "GET" "/css/student-home.css" responded 200 in 0.5248 ms
+04/18/2023 22:25:29 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.1662 ms
+04/18/2023 22:25:29 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0450 ms
+04/18/2023 22:25:51 HTTP "GET" "/css/student-home.css" responded 200 in 0.5645 ms
+04/18/2023 22:25:51 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.8214 ms
+04/18/2023 22:25:51 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.9465 ms
+04/18/2023 22:26:04 HTTP "GET" "/css/student-home.css" responded 200 in 0.5945 ms
+04/18/2023 22:26:04 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0195 ms
+04/18/2023 22:26:04 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6395 ms
+04/18/2023 22:26:34 HTTP "GET" "/css/student-home.css" responded 200 in 0.6970 ms
+04/18/2023 22:26:34 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.7800 ms
+04/18/2023 22:26:34 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1805 ms
+04/18/2023 22:26:44 HTTP "GET" "/css/student-home.css" responded 200 in 0.5003 ms
+04/18/2023 22:26:44 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.0925 ms
+04/18/2023 22:26:44 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.6525 ms
+04/18/2023 22:27:14 HTTP "GET" "/css/student-home.css" responded 200 in 0.5001 ms
+04/18/2023 22:27:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.9313 ms
+04/18/2023 22:27:14 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.3340 ms
+04/18/2023 22:27:18 HTTP "GET" "/css/student-home.css" responded 200 in 0.5168 ms
+04/18/2023 22:27:18 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7547 ms
+04/18/2023 22:27:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2488 ms
+04/18/2023 22:27:28 HTTP "GET" "/css/student-home.css" responded 200 in 0.5352 ms
+04/18/2023 22:27:28 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7905 ms
+04/18/2023 22:27:28 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3867 ms
+04/18/2023 22:28:20 HTTP "GET" "/css/student-home.css" responded 200 in 0.5987 ms
+04/18/2023 22:28:20 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.1382 ms
+04/18/2023 22:28:20 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.3843 ms
+04/18/2023 22:28:44 HTTP "GET" "/css/student-home.css" responded 200 in 1.0385 ms
+04/18/2023 22:28:44 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.8585 ms
+04/18/2023 22:28:44 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.0059 ms
+04/18/2023 22:28:45 HTTP "GET" "/css/student-home.css" responded 200 in 0.5155 ms
+04/18/2023 22:28:45 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9267 ms
+04/18/2023 22:28:45 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.4896 ms
+04/18/2023 22:29:04 HTTP "GET" "/css/student-home.css" responded 200 in 0.7976 ms
+04/18/2023 22:29:04 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.0844 ms
+04/18/2023 22:29:04 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.7718 ms
+04/18/2023 22:29:14 HTTP "GET" "/css/student-home.css" responded 200 in 0.6165 ms
+04/18/2023 22:29:14 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1037 ms
+04/18/2023 22:29:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.1925 ms
+04/18/2023 22:29:25 HTTP "GET" "/css/student-home.css" responded 200 in 4.2263 ms
+04/18/2023 22:29:25 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 5.3384 ms
+04/18/2023 22:29:25 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 15.9931 ms
+04/18/2023 22:29:54 HTTP "GET" "/css/student-home.css" responded 200 in 0.8746 ms
+04/18/2023 22:29:54 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8534 ms
+04/18/2023 22:29:54 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 2.9759 ms
+04/18/2023 22:30:06 HTTP "GET" "/css/student-home.css" responded 200 in 0.5719 ms
+04/18/2023 22:30:06 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.1753 ms
+04/18/2023 22:30:06 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.9365 ms
+04/18/2023 22:30:16 HTTP "GET" "/css/student-home.css" responded 200 in 0.4895 ms
+04/18/2023 22:30:16 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8000 ms
+04/18/2023 22:30:16 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.2024 ms
+04/18/2023 22:30:24 HTTP "GET" "/css/student-home.css" responded 200 in 0.4683 ms
+04/18/2023 22:30:24 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.8638 ms
+04/18/2023 22:30:24 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.3871 ms
+04/18/2023 22:30:34 HTTP "GET" "/css/student-home.css" responded 200 in 0.6842 ms
+04/18/2023 22:30:34 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 3.6373 ms
+04/18/2023 22:30:34 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.5813 ms
+04/18/2023 22:30:46 HTTP "GET" "/css/student-home.css" responded 200 in 0.5860 ms
+04/18/2023 22:30:46 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 0.7769 ms
+04/18/2023 22:30:46 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.7515 ms
+04/18/2023 22:31:00 HTTP "GET" "/css/student-home.css" responded 200 in 0.5564 ms
+04/18/2023 22:31:00 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.1593 ms
+04/18/2023 22:31:00 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.5941 ms
+04/18/2023 22:31:11 HTTP "GET" "/css/student-home.css" responded 200 in 1.0873 ms
+04/18/2023 22:31:11 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.2326 ms
+04/18/2023 22:31:11 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.6451 ms
+04/18/2023 22:31:44 HTTP "GET" "/css/student-home.css" responded 304 in 3.2766 ms
+04/18/2023 22:31:44 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 3.4070 ms
+04/18/2023 22:32:25 HTTP "GET" "/css/student-home.css" responded 200 in 1.8018 ms
+04/18/2023 22:32:25 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 2.1249 ms
+04/18/2023 22:32:25 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.6876 ms
+04/18/2023 22:32:26 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css.map" responded 200 in 2.6710 ms
+04/18/2023 22:33:27 Application starting app
+04/18/2023 22:33:29 HTTP "GET" "/Student/StudentHomePage" responded 200 in 184.1823 ms
+04/18/2023 22:33:29 HTTP "GET" "/css/student-home.css" responded 200 in 3.5151 ms
+04/18/2023 22:33:29 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 15.8309 ms
+04/18/2023 22:33:29 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 21.7233 ms
+04/18/2023 22:33:30 HTTP "GET" "/favicon.ico" responded 200 in 2.6904 ms
+04/18/2023 22:34:29 Application starting app
+04/18/2023 22:34:29 HTTP "GET" "/Access/Login" responded 302 in 337.3157 ms
+04/18/2023 22:34:29 HTTP "GET" "/" responded 200 in 85.0770 ms
+04/18/2023 22:34:29 HTTP "GET" "/css/site.css" responded 200 in 8.2184 ms
+04/18/2023 22:34:29 HTTP "GET" "/js/welcome-page.js" responded 200 in 7.6319 ms
+04/18/2023 22:34:29 HTTP "GET" "/WebApp.styles.css" responded 200 in 8.8498 ms
+04/18/2023 22:34:29 HTTP "GET" "/css/welcome-page.css" responded 200 in 15.5982 ms
+04/18/2023 22:34:29 HTTP "GET" "/js/site.js" responded 200 in 15.3170 ms
+04/18/2023 22:34:29 HTTP "GET" "/lib/jquery/dist/jquery.min.js" responded 200 in 22.2745 ms
+04/18/2023 22:34:29 HTTP "GET" "/lib/bootstrap/dist/js/bootstrap.bundle.min.js" responded 200 in 23.4603 ms
+04/18/2023 22:34:31 HTTP "GET" "/Access/Logout" responded 302 in 35.2661 ms
+04/18/2023 22:34:31 HTTP "GET" "/" responded 200 in 3.6565 ms
+04/18/2023 22:34:33 HTTP "GET" "/Access/Login" responded 200 in 35.6183 ms
+04/18/2023 22:34:33 HTTP "GET" "/css/register.css" responded 200 in 2.2297 ms
+04/18/2023 22:34:33 HTTP "GET" "/js/register.js" responded 200 in 3.0158 ms
+04/18/2023 22:34:40 HTTP "POST" "/Access/Login" responded 302 in 1339.3572 ms
+04/18/2023 22:34:40 HTTP "POST" "/Access/Login" responded 302 in 1434.5907 ms
+04/18/2023 22:34:40 HTTP "GET" "/Student/StudentHomePage" responded 200 in 11.4999 ms
+04/18/2023 22:34:40 HTTP "GET" "/css/student-home.css" responded 304 in 2.0770 ms
+04/18/2023 22:35:19 Application starting app
+04/18/2023 22:35:28 HTTP "GET" "/Student/StudentHomePage" responded 200 in 119.1570 ms
+04/18/2023 22:35:28 HTTP "GET" "/css/student-home.css" responded 304 in 6.7975 ms
+04/18/2023 22:36:26 HTTP "GET" "/css/student-home.css" responded 200 in 3.1130 ms
+04/18/2023 22:36:26 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 10.4212 ms
+04/18/2023 22:36:26 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 10.4564 ms
+04/18/2023 22:37:18 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.7621 ms
+04/18/2023 22:37:18 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.3301 ms
+04/18/2023 22:37:18 HTTP "GET" "/css/student-home.css" responded 200 in 2.4646 ms
+04/18/2023 22:37:46 HTTP "GET" "/css/student-home.css" responded 200 in 0.5587 ms
+04/18/2023 22:37:46 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 3.1472 ms
+04/18/2023 22:37:46 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 4.4274 ms
+04/18/2023 22:38:14 HTTP "GET" "/css/student-home.css" responded 200 in 0.5873 ms
+04/18/2023 22:38:14 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 1.8392 ms
+04/18/2023 22:38:14 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 1.0331 ms
+04/18/2023 22:38:19 HTTP "GET" "/css/student-home.css" responded 200 in 0.6235 ms
+04/18/2023 22:38:19 HTTP "GET" "/fontawesome-free-6.4.0-web/css/fontawesome.min.css" responded 200 in 7.2544 ms
+04/18/2023 22:38:19 HTTP "GET" "/lib/bootstrap/dist/css/bootstrap.min.css" responded 200 in 7.9122 ms

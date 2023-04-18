@@ -1,8 +1,11 @@
 ﻿
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using Application.Interfaces;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal;
 
@@ -54,5 +57,40 @@ public class AccountRepository: IAccountRepository
             }
         }
         return Role;
+    }
+
+    public List<Claim> Login(string email, string password, string role)
+    {
+        BaseUser? user = _context.Students.SingleOrDefault(student => student.Email == email);
+        switch (role)
+        {
+            case "Professor":
+                user = _context.Professors.SingleOrDefault(professor => professor.Email == email);
+                break;
+            case "Manager":
+                user = _context.Managers.SingleOrDefault(manager => manager.Email == email);
+                break;
+        }
+        List<Claim> claims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Role, role)
+            };
+            
+            /*ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,
+                CookieAuthenticationDefaults.AuthenticationScheme);
+
+            AuthenticationProperties properties = new AuthenticationProperties()
+            {
+                AllowRefresh = true, IsPersistent = true
+            };*/
+
+            return claims;
+    }
+    
+    public Student GetStudent(String email)
+    {
+        return _context.Students.SingleOrDefault(student => student.Email == email);
     }
 }
