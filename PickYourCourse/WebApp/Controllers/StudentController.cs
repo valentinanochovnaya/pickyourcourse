@@ -18,4 +18,14 @@ public class StudentController: Controller
         
         return RedirectToAction("Index", "Home");
     }
+
+    public IActionResult Notifications()
+    {
+        return View();
+    }
+    
+    public IActionResult ChooseCourseGeneral()
+    {
+        return View();
+    }
 }
