@@ -38,6 +38,9 @@ builder.Services.AddDbContext<DataContext>(x => x.UseNpgsql(connectionStrings));
 builder.Services.AddScoped<IApplicationDbContext, DataContext>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IMapper, MapperService>();
+builder.Services.AddMvc()
+    .AddSessionStateTempDataProvider();
+builder.Services.AddSession();
 builder.Services.AddSwaggerGen(c =>
 {
     c.IncludeXmlComments(string.Format(@"{0}\PickYourCourse.xml", System.AppDomain.CurrentDomain.BaseDirectory));
@@ -77,6 +80,7 @@ app.MapControllerRoute(
 
 
 Log.Information("Application starting app");
+app.UseSession();
 app.Run();
 
 Log.CloseAndFlush();

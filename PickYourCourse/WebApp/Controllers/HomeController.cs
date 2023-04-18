@@ -19,7 +19,7 @@ namespace WebApp.Controllers
         public IActionResult Index()
         {
             if (HttpContext.User.Identity.IsAuthenticated)
-                ViewData["Role"] = HttpContext.User.Claims.First(c => c.Type == "Role");
+                ViewData["Role"] = HttpContext.User.Claims.First(c => c.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role").Value;
                 
             return View();
         }
