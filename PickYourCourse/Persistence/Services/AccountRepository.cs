@@ -30,6 +30,13 @@ public class AccountRepository: IAccountRepository
         await _context.Professors.AddAsync(professor);
         await _context.SaveChangesAsync();
     }
+    
+    public async Task RegisterManager(Manager manager)
+    {
+        await _context.Managers.AddAsync(manager);
+        await _context.SaveChangesAsync();
+    }
+
 
     public String GetRole(String email, String password)
     {
@@ -92,5 +99,15 @@ public class AccountRepository: IAccountRepository
     public Student GetStudent(String email)
     {
         return _context.Students.SingleOrDefault(student => student.Email == email);
+    }
+    
+    public Professor GetProfessor(String email)
+    {
+        return _context.Professors.SingleOrDefault(professor => professor.Email == email);
+    }
+    
+    public Manager GetManager(String email)
+    {
+        return _context.Managers.SingleOrDefault(manager => manager.Email == email);
     }
 }

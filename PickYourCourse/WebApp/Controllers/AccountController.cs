@@ -29,11 +29,14 @@ public class AccountController: Controller
         {
             await _accountRepository.RegisterStudent(_mapper.StudentVMToStudent(registerVM));
         }
-        else
+        else if (registerVM.Role == (Roles) 1)
         {
             await _accountRepository.RegisterProfessor(_mapper.ProfessorVNToProfessor(registerVM));
         }
-        ViewBag.message = "The user is saved successfully"; 
-        return View("RegisterCompleted");
+        else
+        {
+            await _accountRepository.RegisterManager(_mapper.ManagerVMToManager(registerVM));
+        }
+        return RedirectToAction("Index", "Home");
     }
 }
