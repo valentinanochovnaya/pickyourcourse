@@ -294,3 +294,47 @@ hr {
     border-radius: 20px;
     width: 150px;
 }
+
+#approve-prof {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    color:#505050E5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+#reject-prof {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    color:#505050E5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    opacity: 80%;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+#cancel-prof {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+#cancel-prof:hover {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    opacity:80%;
+}
+
+#btn-edit {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    color:#505050E5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+}

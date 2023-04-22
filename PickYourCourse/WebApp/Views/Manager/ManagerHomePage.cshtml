@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>title</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/manager-home.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/fontawesome-free-6.4.0-web/css/fontawesome.min.css">
@@ -53,7 +54,7 @@
                 <input class="form-control" placeholder="@Model?.LastName" disabled/>
             </div>
             <div class="btn-row" type="button">
-                <button class="btn-edit btn btn-primary">Edit</button>
+                <button class="btn-edit btn btn-primary" id="btn-edit">Edit</button>
             </div>
         </div>
 
@@ -65,8 +66,9 @@
             <div class="left-handed">
                 @for (var i = 0; i < @Model?.RequestedProfessors?.Count; i++)
                 {
-                    var btnId = i;;
+                    var btnId = i;
                     <button class="form-control prof-btn" data-classid="@btnId" id="@btnId">@Model?.RequestedProfessors[i]?.Email</button>
+
                 }
                 <div class="pagination" id="pagination">
                     @if (ViewBag.Page > 0)
@@ -75,7 +77,7 @@
                             <i class="fa-solid fa-arrow-left-long fa-xl"></i>
                         </a>
                     }
-                    @if (ViewBag.Page <= ViewBag.MaxPage)
+                    @if (ViewBag.Page < ViewBag.MaxPage)
                     {
                         <a href="@Url.Action("ManagerHomePage", new {email = @Model?.Email, page = ViewBag.Page + 1})" class="arrow">
                             <i class="fa-solid fa-arrow-right-long fa-xl"></i>
@@ -83,9 +85,9 @@
                     }
                 </div>
                 <div class="btn-container" id="btns">
-                    <button class="btn btn-primary prof-btns" id="cancel-prof">Cancel</button>
-                    <button class="btn btn-primary prof-btns">Reject</button>
-                    <button class="btn btn-primary prof-btns">Approve</button>
+                    <button class="btn btn-outline-secondary prof-btns" id="cancel-prof">Cancel</button>
+                    <button class="btn btn-primary prof-btns" id="reject-prof" onclick="professorAction('@Model?.Email', false)">Reject</button>
+                    <button class="btn btn-primary prof-btns" id="approve-prof" onclick="professorAction('@Model?.Email', true)">Approve</button>
                 </div>
             </div>
             <div class="right-handed"></div>
@@ -93,6 +95,7 @@
     </div>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="~/js/manager-home.js"></script>
 </body>
 </html>
