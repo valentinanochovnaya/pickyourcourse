@@ -1,4 +1,6 @@
 ﻿using Application.Interfaces;
+using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Services;
 
@@ -30,5 +32,24 @@ public class ManagerService: IManagerInterface
             professor.IsPending = false;
             await _context.SaveChangesAsync();
         }
+    }
+
+    public async Task<int> ApproveManager(string email)
+    {
+        var professor = _context.Professors.FirstOrDefault(p => p.Email == email);
+        if (professor != null)
+        {
+            professor.IsManager = true;
+           // _context.Managers.AddAsync(professor)
+            await _context.SaveChangesAsync();
+            return 1;
+        }
+
+        return 0;
+    }
+    
+    public async Task<List<Professor>> GetProfessorsWithManagerRights()
+    {
+        return await _context.Professors.Where(p => p.IsManager).ToListAsync();
     }
 }
