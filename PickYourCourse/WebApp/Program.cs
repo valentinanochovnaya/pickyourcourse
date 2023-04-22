@@ -39,6 +39,7 @@ builder.Services.AddScoped<IApplicationDbContext, DataContext>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IMapper, MapperService>();
 builder.Services.AddScoped<IProfessorInterface, ProfessorService>();
+builder.Services.AddScoped<IManagerInterface, ManagerService>();
 builder.Services.AddMvc()
     .AddSessionStateTempDataProvider();
 builder.Services.AddSession();
