@@ -8,5 +8,6 @@ public class ManagerViewModel
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public List<Professor>? RequestedProfessors { get; set; }
+    public List<Professor>? ProfessorsWithManagerRights { get; set; }
     
 }

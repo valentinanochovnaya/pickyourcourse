@@ -18,22 +18,29 @@ public class ManagerController: Controller
         _professorInterface = professorInterface;
         _managerInterface = managerInterface;
     }
-    public IActionResult ManagerHomePage(string email, int page = 0)
+    public IActionResult ManagerHomePage(string email, int page = 0, int pageManagers = 0)
     {
         var manager = this._accountRepository?.GetManager(email);
         var pendingProfessors = this._professorInterface?.GetRequestedProfessors().Result;
+        var professorsWithManagerRights = this._managerInterface?.GetProfessorsWithManagerRights().Result;
         ManagerViewModel? vm = new ManagerViewModel
         {
             FirstName = manager?.FirstName,
             LastName = manager?.LastName,
             Email = manager?.Email,
-            RequestedProfessors = pendingProfessors
+            RequestedProfessors = pendingProfessors,
+            ProfessorsWithManagerRights = professorsWithManagerRights
         };
         int pageSize = 6;
-        int count = vm.RequestedProfessors.Count;
+        int pageManagersSize = 4;
+        int countRequested = vm.RequestedProfessors.Count;
         vm.RequestedProfessors = vm.RequestedProfessors.Skip((page) * pageSize).Take(pageSize).ToList();
-        this.ViewBag.MaxPage = (count / pageSize) - (count % pageSize == 0 ? 1 : 0);
+        this.ViewBag.MaxPage = (countRequested / pageSize) - (countRequested % pageSize == 0 ? 1 : 0);
         this.ViewBag.Page = page;
+        int countManagers = vm.ProfessorsWithManagerRights.Count;
+        vm.ProfessorsWithManagerRights = vm.ProfessorsWithManagerRights.Skip((pageManagers) * pageManagersSize).Take(pageManagersSize).ToList();
+        this.ViewBag.MaxPageManagers = (countManagers / pageManagersSize) - (countManagers % pageManagersSize == 0 ? 1 : 0);
+        this.ViewBag.PageManagers = pageManagers;
         return View(vm);
     }
     
@@ -66,5 +73,16 @@ public class ManagerController: Controller
         }
         
         return RedirectToAction("ManagerHomePage", "Manager", new { email = requestModel.ManagerEmail });
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddManager([FromBody] RequestModel requestModel)
+    {
+        var result = await _managerInterface.ApproveManager(requestModel.ProfessorEmail);
+        if (result == 0)
+        {
+            return NotFound();
+        }
+        return Ok();
     }
 }
