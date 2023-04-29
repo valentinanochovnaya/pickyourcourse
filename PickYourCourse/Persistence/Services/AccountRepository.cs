@@ -92,5 +92,9 @@ public class AccountRepository: IAccountRepository
     public Student GetStudent(String email)
     {
         return _context.Students.SingleOrDefault(student => student.Email == email);
+    }    
+    public Professor GetProfessor(String email)
+    {
+        return _context.Professors.SingleOrDefault(student => student.Email == email);
     }
 }
