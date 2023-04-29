@@ -36,44 +36,46 @@
     </ul>
   </div>
 </nav>
-<div class="student-home-container">
-    <div class="upper-box container">
-
-        <div class="photo-circle"></div>
-        <div class="profile-form">
-            <div class="column-1">
-                <input class="form-control" placeholder="@Model.FirstName" disabled/>
-                <input class="form-control" placeholder="@Model.Email" disabled/>
+<div class="wrapper">
+    <div class="student-home-container">
+        <div class="upper-box container">
+    
+            <div class="photo-circle"></div>
+            <div class="profile-form">
+                <div class="column-1">
+                    <input class="form-control" placeholder="@Model.FirstName" disabled/>
+                    <input class="form-control" placeholder="@Model.Email" disabled/>
+                </div>
+                <div class="column-2">
+                    <input class="form-control" placeholder="@Model.LastName" disabled/>
+                    <input class="form-control" placeholder="@Model.Year" disabled/>
+                </div>
+                <div class="btn-row" type="button">
+                    <button class="btn-edit btn btn-primary">Edit</button>
+                </div>
             </div>
-            <div class="column-2">
-                <input class="form-control" placeholder="@Model.LastName" disabled/>
-                <input class="form-control" placeholder="@Model.Year" disabled/>
+            <div class="column-3">
+                <div class="icon">
+                    <i class="fa-solid fa-bell fa-xl"></i>
+                </div>
+                <div class="enrolled-text">
+                    <h4>Enrolled: @Model?.StudentCoursesNumber/@Model?.CoursesNumber</h4>
+                </div>
             </div>
-            <div class="btn-row" type="button">
-                <button class="btn-edit btn btn-primary">Edit</button>
-            </div>
+    
         </div>
-        <div class="column-3">
-            <div class="icon">
-                <i class="fa-solid fa-bell fa-xl"></i>
-            </div>
-            <div class="enrolled-text">
-                <h4>Enrolled: @Model?.StudentCoursesNumber/@Model?.CoursesNumber</h4>
-            </div>
+        <div class="lower-box">
+            @if (Model.StudentCourses != null && Model?.StudentCourses?.Count != 0)
+            {
+                <div></div>
+            }
+            else
+            {
+                <h2>You haven't picked any courses yet</h2>
+            }
         </div>
-
+    
     </div>
-    <div class="lower-box">
-        @if (Model.StudentCourses != null && Model?.StudentCourses?.Count != 0)
-        {
-            <div></div>
-        }
-        else
-        {
-            <h2>You haven't picked any courses yet</h2>
-        }
-    </div>
-
 </div>
 </body>
 </html>
