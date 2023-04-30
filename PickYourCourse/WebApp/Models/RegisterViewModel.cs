@@ -22,14 +22,12 @@ public class RegisterViewModel
     [Compare("Password", ErrorMessage = "Passwords do not match")]
     public string ConfirmPassword { get; set; }
     [Display(Name = " ")]
-    [Required(ErrorMessage = "Course Year is required")]
-    [Range(1, 4, ErrorMessage = "Course Year must be between 1 and 4")]
     public int Year { get; set; }
     [Display(Name = " ")]
-    [Required(ErrorMessage = "Role is required")]
     public Roles Role { get; set; }
 }
 public enum Roles {
     Student,
     Professor,
+    Manager
 }

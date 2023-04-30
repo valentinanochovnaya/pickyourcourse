@@ -1,4 +1,4 @@
-﻿@model VMLogin
+﻿@model ManagerViewModel
 
 @{
     Layout = null;
@@ -9,10 +9,125 @@
 <html>
 <head>
     <title>title</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/manager-home.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/toastify-js-master/src/toastify.css"/>
+    <script src="https://kit.fontawesome.com/c1ebd643d0.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<div>
-      
+<nav role="navigation">
+    <div id="menuToggle">
+        <input type="checkbox"/>
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <hr>
+            <a>
+                <li>Courses</li>
+            </a>
+            <hr>
+            <a asp-action="LogOut">
+                <li>Log out</li>
+            </a>
+            <hr>
+        </ul>
+    </div>
+</nav>
+<div class="wrapper">
+    <div class="student-home-container">
+        <div class="upper-box container">
+    
+            <div class="photo-circle"></div>
+            <div class="profile-form">
+                <div class="column-1">
+                    <input class="form-control" placeholder="@Model?.FirstName" disabled/>
+                    <input class="form-control" placeholder="@Model?.Email" disabled/>
+                </div>
+                <div class="column-2">
+                    <input class="form-control" placeholder="@Model?.LastName" disabled/>
+                </div>
+                <div class="btn-row" type="button">
+                    <button class="btn-edit btn btn-primary" id="btn-edit">Edit</button>
+                </div>
+            </div>
+    
+        </div>
+        <div class="lower-box">
+            <div class="vertical">
+            </div>
+            <div class="grid-container">
+                <div class="left-handed">
+                    @for (var i = 0; i < @Model?.RequestedProfessors?.Count; i++)
+                    {
+                        var btnId = i;
+                        <button class="form-control prof-btn" data-classid="@btnId" id="@btnId">@Model?.RequestedProfessors[i]?.Email</button>
+                    }
+                    <div class="pagination" id="pagination">
+                        @if (ViewBag.Page > 0)
+                        {
+                            <a href="@Url.Action("ManagerHomePage", new {email = @Model?.Email, page = ViewBag.Page - 1})" class="arrow">
+                                <i class="fa-solid fa-arrow-left-long fa-xl"></i>
+                            </a>
+                        }
+                        @if (ViewBag.Page < ViewBag.MaxPage)
+                        {
+                            <a href="@Url.Action("ManagerHomePage", new {email = @Model?.Email, page = ViewBag.Page + 1})" class="arrow">
+                                <i class="fa-solid fa-arrow-right-long fa-xl"></i>
+                            </a>
+                        }
+                    </div>
+                    <div class="btn-container" id="btns">
+                        <button class="btn btn-outline-secondary prof-btns" id="cancel-prof">Cancel</button>
+                        <button class="btn btn-primary prof-btns" id="reject-prof" onclick="professorAction('@Model?.Email', false)">Reject</button>
+                        <button class="btn btn-primary prof-btns" id="approve-prof" onclick="professorAction('@Model?.Email', true)">Approve</button>
+                    </div>
+                </div>
+                <div class="right-handed">
+                    <div class="add-manager-container">
+                        <button class="btn btn-primary add-manager" id="add-manager">Add Manager</button>
+                    </div>
+                    <div id="managers">
+                        @for (var i = 0; i < @Model?.ProfessorsWithManagerRights?.Count; i++)
+                        {
+                            var btnId = i;
+                            <button class="form-control managers-btn" data-classid="@btnId" id="@btnId">@Model?.ProfessorsWithManagerRights[i]?.Email</button>
+                        }
+                    </div>
+                    <div class="pagination" id="pagination-managers">
+                        @if (ViewBag.PageManagers > 0)
+                        {
+                            <a href="@Url.Action("ManagerHomePage", new {email = @Model?.Email, page = ViewBag.Page, pageManagers = ViewBag.pageManagers - 1})" class="arrow">
+                                <i class="fa-solid fa-arrow-left-long fa-xl"></i>
+                            </a>
+                        }
+                        @if (ViewBag.PageManagers < ViewBag.MaxPageManagers)
+                        {
+                            <a href="@Url.Action("ManagerHomePage", new {email = @Model?.Email, page = ViewBag.Page, pageManagers = ViewBag.pageManagers + 1})" class="arrow">
+                                <i class="fa-solid fa-arrow-right-long fa-xl"></i>
+                            </a>
+                        }
+                    </div>
+                    <div class="add-manager-form" id="add-manager-form">
+                        <input type="text" class="form-control email-input" id="email-input">
+                        <button class="btn btn-primary" id="add-manager-btn" onclick="addManager('@Model.Email')">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="~/js/manager-home.js"></script>
+<script src="~/toastify-js-master/src/toastify.js"></script>
 </body>
 </html>

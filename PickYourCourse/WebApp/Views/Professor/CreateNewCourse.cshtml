@@ -63,31 +63,35 @@
     
         </div>
         <div class="lower-box">
-            <div class="vertical">
-            </div>
-            <div class="grid-container">
-                <div class="left-handed">
-                    @for (var i = 0; i < @Model?.ProfessorCourses?.Count; i++)
-                    {
-                        var btnId = i;
-                        <button class="form-control prof-btn" data-classid="@btnId" id="@btnId" description="@Model.ProfessorCourses[i].Description">@Model?.ProfessorCourses[i]?.Name</button>
-                    }
-                    
-                    <div class="pagination" id="pagination">
-                        @if (ViewBag.index > 0)
-                        {
-                            <a href="@Url.Action("ProfessorHomePage", new {email = @Model?.Email, index = ViewBag.index - 1})" class="arrow">
-                                <i class="fa-solid fa-arrow-left-long fa-xl"></i>
-                            </a>
-                        }
-                        @if (ViewBag.NeedToShowNextPage)
-                        {
-                            <a href="@Url.Action("ProfessorHomePage", new {email = @Model?.Email, index = ViewBag.index + 1})" class="arrow">
-                                <i class="fa-solid fa-arrow-right-long fa-xl"></i>
-                            </a>
-                        }
-                    </div>
-                    
+            <div class="grid-container-2">
+
+                    <form class="form-container" asp-action="CreateNewCourseAction">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="second-row">
+                                    <div class="form-group">
+                                        <label asp-for="NewCourse.Name" class="control-label"></label>
+                                        <input placeholder="New Course" asp-for="NewCourse.Name" class="form-control"/>
+                                        <span asp-validation-for="NewCourse.Name" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="second-row">
+                                    <div class="form-group">
+                                        <label asp-for="NewCourse.Description" class="control-label"></label>
+                                        <textarea placeholder="Course description" rows="5" asp-for="NewCourse.Description" class="form-control"></textarea>
+                                        <span asp-validation-for="NewCourse.Description" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="second-row">
+                                    <div class="form-group">
+                                        <label asp-for="NewCourse.Year" class="control-label"></label>
+                                        <input placeholder="Course description" asp-for="NewCourse.Year" class="form-control"/>
+                                        <span asp-validation-for="NewCourse.Year" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="btn-row" type="button">
+                                    <input class="btn-edit btn btn-primary" type="submit" value="Create new course"/>
+                                    </div>
+                            </form>
                     @*
                     <div class="btn-container" id="btns">
                         <button class="btn btn-outline-secondary prof-btns" id="cancel-prof">Cancel</button>
@@ -96,30 +100,7 @@
                     </div>
                     *@
                 </div>
-                <div class="right-handed">
-                    @if (@Model.IsActivated == true)
-                    {
-                        <a asp-action="CreateNewCourse">
-                            <div class="add-manager-container">
-                                <button class="btn btn-primary add-manager" id="add-course">Add course</button>
-                            </div>
-                        </a>
-                    }
-                    else
-                    {
-                        <div class="add-manager-container">
-                            <button class="btn btn-primary add-manager" onclick="donothaveaccess()" id="add-course">Add course</button>
-                        </div>
-                        <script>
-                        function donothaveaccess() {
-                          alert("You are not allowed to do this!");
-                        }
-                        </script>
-                    }
-                    <input id="course_title" class="form-control" placeholder="TITLE HERE" disabled/>
-                    <textarea id="course_textarea" class="form-control" placeholder="SMTH HERE" rows="10" disabled></textarea>
-                </div>
-            </div>
+
         </div>
     
     </div>

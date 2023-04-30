@@ -13,7 +13,6 @@ body {
     position: relative;
 }
 
-
 .wrapper {
     display: flex;
     justify-content: center;
@@ -52,7 +51,7 @@ body {
     grid-template-columns: calc(100% / 4) calc(100% / 2) calc(100% / 4);
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .btn-row {
@@ -72,7 +71,7 @@ body {
     border-radius: 20px;
 }
 .column-3 {
-   
+
 }
 .icon {
     position: absolute;
@@ -87,7 +86,6 @@ body {
 }
 
 .lower-box {
-    display: flex;
     position: absolute;
     width: 1100px;
     height: 380px;
@@ -192,7 +190,7 @@ hr {
 
 #menuToggle input:checked ~ span
 {
-    
+
     transform: rotate(45deg) translate(-2px, -1px);
     color: #505050;
     opacity:50%;
@@ -218,13 +216,13 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     position: absolute;
     width: 300px;
     margin: -60px 0 0 -30px;
     padding: 50px;
     padding-top: 60px;
-    
+
 
     background: #BDCDD6;
     border: 2px solid #6096B4;
@@ -247,4 +245,143 @@ hr {
 #menuToggle input:checked ~ ul
 {
     transform: none;
+}
+
+
+.vertical {
+    border-left: 2px solid #505050;
+    height: 380px;
+    position:absolute;
+    left: 50%;
+    opacity: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow {
+    color: #505050;
+    opacity: 50%;
+    margin-right: 3px;
+}
+
+.arrow:hover {
+    color: #505050;
+    opacity: 80%;
+}
+
+.prof-btn {
+    text-align: left;
+}
+
+.btn-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.left-handed{
+    display: flex;
+    flex-direction: column;
+}
+
+.prof-btns {
+    margin-right: 3px;
+    border-radius: 20px;
+    width: 150px;
+}
+
+#approve-prof {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    color:#505050E5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+#reject-prof {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    color:#505050E5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    opacity: 80%;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+#cancel-prof {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+#cancel-prof:hover {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    opacity:80%;
+}
+
+#btn-edit {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    color:#505050E5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.add-manager-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+#add-manager {
+    background: rgb(215,133,133);
+    background: linear-gradient(90deg, rgba(215,133,133,1) 0%, rgba(215,133,133,1) 50%, rgba(238,233,218,1) 100%);
+    color:#505050E5;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.add-manager-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.email-input {
+    width: 400px;
+}
+
+#add-manager-btn {
+    background: rgb(215, 133, 133);
+    width: 100px;
+    background: linear-gradient(90deg, rgba(215, 133, 133, 1) 0%, rgba(215, 133, 133, 1) 50%, rgba(238, 233, 218, 1) 100%);
+    color: #505050E5;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+#managers {
+    margin-top: 10px;
 }
