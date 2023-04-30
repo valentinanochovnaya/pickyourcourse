@@ -105,12 +105,10 @@ public class AccountRepository: IAccountRepository
     {
         return _context.Students.SingleOrDefault(student => student.Email == email);
     }
-
     public Professor GetProfessor(String email)
     {
         return _context.Professors.SingleOrDefault(professor => professor.Email == email);
     }
-
     public Manager GetManager(String email)
     {
         return _context.Managers.SingleOrDefault(manager => manager.Email == email);
