@@ -1,0 +1,12 @@
+﻿#course_title{
+    visibility: hidden;
+}
+
+#course_textarea{
+    visibility: hidden;
+}
+
+.grid-container-2{
+    grid-gap: 5px;
+    padding: 10px;
+}

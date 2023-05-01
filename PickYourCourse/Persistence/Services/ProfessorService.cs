@@ -16,4 +16,8 @@ public class ProfessorService: IProfessorInterface
     {
         return await _context.Professors.Where(professor => professor.IsPending == true).ToListAsync();
     }
+    public async Task<List<Course>> GetProfessorCourses(Professor professor)
+    {
+        return await _context.Courses.Where(course => course.ProfessorId == professor.Id).ToListAsync();
+    }
 }

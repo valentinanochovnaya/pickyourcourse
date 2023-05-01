@@ -13,4 +13,5 @@ public interface IAccountRepository
     Student GetStudent(String email);
     Professor GetProfessor(String email);
     Manager GetManager(String email);
+    Task AddCourse(Course course);
 }
