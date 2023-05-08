@@ -25,7 +25,7 @@ public class ProfessorController: Controller
         this.ViewBag.index = index;
         var professor = this._accountRepository?.GetProfessor(email);
         var courses = _professorInterface.GetProfessorCourses(professor).Result;
-        int pagination_size = 3;
+        int pagination_size = 7;
         bool NeedToShowNextPage = false;
         if (courses.Count < pagination_size * index || courses.Count == 0)
         {
