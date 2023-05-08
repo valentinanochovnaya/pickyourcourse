@@ -1,4 +1,4 @@
-﻿
+﻿@model ChooseCourseGeneralVM
 
 @{
     Layout = null;
@@ -9,10 +9,98 @@
 <html>
 <head>
     <title>title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/student-choose-course.css">
+    <link rel="stylesheet" href="~/fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/toastify-js-master/src/toastify.css"/>
+    <script src="https://kit.fontawesome.com/c1ebd643d0.js" crossorigin="anonymous"></script>
 </head>
+<nav role="navigation">
+    <div id="menuToggle">
+        <input type="checkbox"/>
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <hr>
+            <a>
+                <li>Choose a course</li>
+            </a>
+            <hr>
+            <a>
+                <li>Notifications</li>
+            </a>
+            <hr>
+            <a asp-action="LogOut">
+                <li>Log out</li>
+            </a>
+            <hr>
+        </ul>
+    </div>
+</nav>
+<div>
+    <div class="wrapper">
+        <div class="main-item">
+            <div class="vertical"></div>
+            <div class="grid-container">
+                <div class="left-handed">
+                    @for (var i = 0; i < @Model?.StudentCourses?.Count; i++)
+                    {
+                        var btnId = i;
+                        <button class="form-control course-btn" data-classid="@btnId" id="@btnId" description="@Model?.StudentCourses[i]">@Model?.StudentCourses[i]?.Name</button>
+                    }
+                    <div class="pagination" id="pagination">
+                        @if (ViewBag.index > 0)
+                        {
+                            <a href="@Url.Action("ChooseCourseGeneral", new {email = @Model?.Email, index = ViewBag.index - 1})" class="arrow">
+                                <i class="fa-solid fa-arrow-left-long fa-xl"></i>
+                            </a>
+                        }
+                        @if (ViewBag.NeedToShowNextPage)
+                        {
+                            <a href="@Url.Action("ChooseCourseGeneral", new {email = @Model?.Email, index = ViewBag.index + 1})" class="arrow">
+                                <i class="fa-solid fa-arrow-right-long fa-xl"></i>
+                            </a>
+                        }
+                    </div>
+
+                </div>
+                <div class="right-handed">
+                    <div class="side-wrapper">
+                        <div class="input-container">
+                            <div class="input-data">
+                                <h5>Professor</h5>
+                                <input id="prof-name" class="form-control input" type="text" disabled>
+                            </div>
+                            <div class="input-data">
+                                <h5>Description</h5>
+                                <textarea class="form-control input" name="" id="desc"  rows="5" disabled></textarea>
+                            </div>
+                            <div class="input-data">
+                                <h5>Min Score</h5>
+                                <input id="score" class="form-control input" type="text" disabled>
+                            </div>
+                        </div>
+                        <div class="enrol-btn-wrapper">
+                            <button class="enroll-btn">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="~/js/student-choose-course.js"></script>
+<script src="~/toastify-js-master/src/toastify.js"></script>
 <body>
 <div>
-      
+
 </div>
 </body>
 </html>
