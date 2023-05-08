@@ -1,7 +1,9 @@
 ﻿using Application.Interfaces;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
 using Persistence.DataContext;
 using Persistence.Services;
@@ -33,6 +35,9 @@ builder.Services.AddAuthentication(
         option.LoginPath = "/Access/Login";
         option.ExpireTimeSpan = TimeSpan.FromMinutes(120);
     });
+
+builder.Services.Configure<DataProtectionTokenProviderOptions>(opts => opts.TokenLifespan = TimeSpan.FromHours(10));
+
 var connectionStrings = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<DataContext>(x => x.UseNpgsql(connectionStrings));
 builder.Services.AddScoped<IApplicationDbContext, DataContext>();
@@ -43,6 +48,7 @@ builder.Services.AddScoped<IManagerInterface, ManagerService>();
 builder.Services.AddMvc()
     .AddSessionStateTempDataProvider();
 builder.Services.AddSession();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.IncludeXmlComments(string.Format(@"{0}\PickYourCourse.xml", System.AppDomain.CurrentDomain.BaseDirectory));

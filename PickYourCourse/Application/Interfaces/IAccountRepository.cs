@@ -14,4 +14,7 @@ public interface IAccountRepository
     Professor GetProfessor(String email);
     Manager GetManager(String email);
     Task AddCourse(Course course);
+    Task AddTokenToUser(String email, String token);
+    Task UpdateUserPassword(String email, String password);
+    BaseUser GetUser(String email);
 }
