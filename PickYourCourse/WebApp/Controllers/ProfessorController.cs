@@ -27,6 +27,7 @@ public class ProfessorController: Controller
         var courses = _professorInterface.GetProfessorCourses(professor).Result;
         int pagination_size = 7;
         bool NeedToShowNextPage = false;
+        /* LINQ.Skip for pagination; Rename func method to Index;  */
         if (courses.Count < pagination_size * index || courses.Count == 0)
         {
             courses = new List<Course>();

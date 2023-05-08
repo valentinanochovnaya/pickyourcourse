@@ -42,6 +42,27 @@ public class AccountRepository: IAccountRepository
         await _context.SaveChangesAsync();
     }
 
+    public async Task AddTokenToUser(String email, String token)
+    {
+        var user = this.GetUser(email);
+        user.Token = token;
+        
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task UpdateUserPassword(String token, String new_password)
+    {
+        var user = this.GetUserByToken(token);
+        using var hmac = new HMACSHA512();
+        var PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(new_password));
+        var PasswordSalt = hmac.Key;
+
+        user.PasswordHash = PasswordHash;
+        user.PasswordSalt = PasswordSalt;
+
+        await _context.SaveChangesAsync();
+    }
+
 
     public String GetRole(String email, String password)
     {
@@ -112,5 +133,35 @@ public class AccountRepository: IAccountRepository
     public Manager GetManager(String email)
     {
         return _context.Managers.SingleOrDefault(manager => manager.Email == email);
+    }
+    public BaseUser GetUser(String email)
+    {
+        BaseUser? user = _context.Students.SingleOrDefault(student => student.Email == email);
+
+        if (user == null)
+        {
+            user = _context.Professors.SingleOrDefault(professor => professor.Email == email);
+        }
+        if (user == null)
+        {
+            user = _context.Managers.SingleOrDefault(professor => professor.Email == email);
+        }
+        
+        return user;
+    }
+    public BaseUser GetUserByToken(String token)
+    {
+        BaseUser? user = _context.Students.SingleOrDefault(student => student.Token == token);
+
+        if (user == null)
+        {
+            user = _context.Professors.SingleOrDefault(professor => professor.Token == token);
+        }
+        if (user == null)
+        {
+            user = _context.Managers.SingleOrDefault(professor => professor.Token == token);
+        }
+        
+        return user;
     }
 }
