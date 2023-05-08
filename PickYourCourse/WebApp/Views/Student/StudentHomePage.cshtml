@@ -27,7 +27,7 @@
     <ul id="menu">
         <a href="#"><li>Home</li></a>
         <hr>
-        <a asp-action="ChooseCourseGeneral"><li>Choose a course</li></a>
+        <a id="choose-course" href="ChooseCourseGeneral?email=@Model.Email"><li>Choose a course</li></a>
         <hr>
         <a asp-action="Notifications"><li>Notifications</li></a>
         <hr>
@@ -77,5 +77,7 @@
     
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="~/js/student-home.js"></script>
 </body>
 </html>
