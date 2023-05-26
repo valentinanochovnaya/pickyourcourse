@@ -94,7 +94,7 @@ public class AccessController : Controller
             MailMessage message = new MailMessage();
             message.From = new MailAddress(fromMail);
             message.Subject = "Subject";
-            message.Body = "Please login " + "https://localhost:7034" + callbackUrl;
+            message.Body = "Please login " + "https://webapp20230526092913.azurewebsites.net" + callbackUrl;
             message.To.Add(user.Email);
             SmtpClient smtp = new SmtpClient("smtp.gmail.com")
             {
